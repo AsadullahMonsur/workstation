@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.homePageController">
+   <children>
+      <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1200.0">
+         <top>
+            <AnchorPane prefHeight="101.0" prefWidth="1200.0" style="-fx-background-color: #ccff66;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="975.0" layoutY="21.0" prefHeight="50.0" prefWidth="135.0" style="-fx-font-size: 30;" text="Welcome" />
+               </children>
+            </AnchorPane>
+         </top>
+         <left>
+            <AnchorPane prefHeight="555.0" prefWidth="243.0" style="-fx-background-color: #ccffff;" BorderPane.alignment="CENTER">
+               <children>
+                  <Button layoutX="4.0" layoutY="7.0" mnemonicParsing="false" onAction="#Personal_Info" prefHeight="42.0" prefWidth="246.0" text="Personal Info" AnchorPane.leftAnchor="0.0">
+                     <font>
+                        <Font name="Calibri Bold Italic" size="22.0" />
+                     </font>
+                  </Button>
+                  <Button layoutY="192.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="246.0" text="Summary" AnchorPane.leftAnchor="0.0">
+                     <font>
+                        <Font name="Calibri Bold Italic" size="22.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="4.0" layoutY="129.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="246.0" text="See Purchase List" AnchorPane.leftAnchor="0.0">
+                     <font>
+                        <Font name="Calibri Bold Italic" size="22.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="4.0" layoutY="69.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="246.0" text="Search Products" AnchorPane.leftAnchor="0.0">
+                     <font>
+                        <Font name="Calibri Bold Italic" size="22.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </left>
+         <center>
+            <ScrollPane BorderPane.alignment="CENTER">
+               <content>
+                  <AnchorPane fx:id="mainhome" prefHeight="562.0" prefWidth="973.0">
+                     <children>
+                        <Text fx:id="a" layoutX="179.0" layoutY="261.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 30;" text="Select your Desired Options From the Menu" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </ScrollPane>
+         </center>
+         <right>
+            <AnchorPane prefHeight="555.0" prefWidth="0.0" style="-fx-background-color: yellow;" BorderPane.alignment="CENTER" />
+         </right>
+         <bottom>
+            <AnchorPane prefHeight="54.0" prefWidth="1200.0" style="-fx-background-color: #333300;" BorderPane.alignment="CENTER">
+               <children>
+                  <Button layoutY="6.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="246.0" text="Exit" AnchorPane.leftAnchor="0.0">
+                     <font>
+                        <Font name="Calibri Bold" size="22.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>

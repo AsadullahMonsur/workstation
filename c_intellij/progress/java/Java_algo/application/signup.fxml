@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1200.0" style="-fx-background-color: #ccccff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Text layoutX="116.0" layoutY="152.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 25; -fx-font-color: purple;" text="SIGN  UP" wrappingWidth="118.974609375" />
+      <TextField layoutX="116.0" layoutY="240.0" prefHeight="44.0" prefWidth="218.0" promptText="Enter User Name (Unique)">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <PasswordField layoutX="439.0" layoutY="240.0" prefHeight="44.0" prefWidth="218.0" promptText="Set Password">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </PasswordField>
+      <Button layoutX="887.0" layoutY="565.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="128.0" style="-fx-font-size: 20;" text="Sign in" />
+      <TextField layoutX="439.0" layoutY="354.0" prefHeight="44.0" prefWidth="218.0" promptText="Enter Number">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <TextField layoutX="767.0" layoutY="239.0" prefHeight="159.0" prefWidth="266.0" promptText="Enter Address">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <TextField layoutX="116.0" layoutY="354.0" prefHeight="44.0" prefWidth="218.0" promptText="Enter Email">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>

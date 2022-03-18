@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="488.0" prefWidth="905.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171">
+   <children>
+      <Text layoutX="99.0" layoutY="134.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 20;" text="Name :" />
+      <Text layoutX="101.0" layoutY="203.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 20;" text="Number :" />
+      <Text layoutX="101.0" layoutY="273.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 20;" text="Email :" />
+      <Text layoutX="100.0" layoutY="339.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 20;" text="Address : " />
+      <ImageView fitHeight="186.0" fitWidth="170.0" layoutX="653.0" layoutY="139.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Pic.jpg" />
+         </image>
+      </ImageView>
+      <Text layoutX="182.0" layoutY="132.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 20;" text="--------------" />
+      <Text layoutX="200.0" layoutY="201.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 20;" text="--------------" />
+      <Text layoutX="182.0" layoutY="271.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 20;" text="--------------" />
+      <Text layoutX="207.0" layoutY="337.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 20;" text="--------------" />
+   </children>
+</AnchorPane>

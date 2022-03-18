@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Secure Core UI</title>
+    <link rel="stylesheet"
+          href="../static/css/kite_view_design.css"
+          th:href="@{/css/kite_view_design.css}">
+
+</head>
+<body>
+
+<div class="view_layout">
+    <div th:style="${nav_bar.visibility[0]}">
+        <nav>
+            <ul>
+                <li>
+                    <button type="submit" > Content 1 </button>
+                </li>
+
+                <li>
+                    <button type="submit" > Content 2 </button>
+                </li>
+
+                <li>
+                    <button type="submit" > Content 3 extra extended</button>
+                </li>
+
+                <li>
+                    <button type="submit" > Content 4 type </button>
+                </li>
+
+                <li>
+                    <button type="submit" > Content 5 is</button>
+                </li>
+
+                <li>
+                    <button type="submit" > 6 </button>
+                </li>
+                <!-- other components  as list oder,
+                   path should be given as required-->
+            </ul>
+        </nav>
+    </div>
+
+    <div>
+        <!╌  layout main content ╌>
+    </div>
+
+    <div th:style="${nav_bar.visibility[1]}">
+        <nav>
+            <ul>
+                <li>
+                    <button type="submit" > Content 1 </button>
+                </li>
+
+                <li>
+                    <button type="submit" > Content 2 extra extended</button>
+                </li>
+
+                <li>
+                    <button type="submit" > Content 3 is</button>
+                </li>
+
+                <li>
+                    <button type="submit" > 4 </button>
+                </li>
+                <!-- other components  as list oder,
+                   path should be given as required-->
+            </ul>
+        </nav>
+    </div>
+</div>
+
+</body>
+</html>

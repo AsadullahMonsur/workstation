@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+
+<AnchorPane prefHeight="407.0" prefWidth="599.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="design_template_01.FXMLDocumentController">
+   <children>
+      <AnchorPane fx:id="container" layoutX="200.0" layoutY="154.0" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Button fx:id="bot" layoutX="25.0" layoutY="16.5" mnemonicParsing="false" onMouseEntered="#entering" onMouseExited="#leaving" prefHeight="50.0" prefWidth="150.0" stylesheets="@neon.css" text="Button">
+               <textFill>
+                  <LinearGradient endX="0.9952380952380953" endY="1.0">
+                     <stops>
+                        <Stop color="BLACK" />
+                        <Stop color="#00ff26" offset="0.007662835249042145" />
+                        <Stop color="#058515" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" height="184.08" radius="93.765" width="192.98">
+                     <color>
+                        <Color red="0.0570906437933445" green="0.5789473652839661" blue="0.048245612531900406" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+   <effect>
+      <InnerShadow color="#0fda23" />
+   </effect>
+</AnchorPane>

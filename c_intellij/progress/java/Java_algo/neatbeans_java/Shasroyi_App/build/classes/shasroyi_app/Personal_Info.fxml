@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="1100.0" style="-fx-background-color: #5bebbd;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="shasroyi_app.Personal_InfoController">
+   <children>
+      <Label layoutX="951.0" layoutY="-1.0" prefHeight="25.0" prefWidth="149.0" style="-fx-background-color: #ffffff;" text="  Personal Info" textAlignment="JUSTIFY" textFill="#eb5b7f">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="126.0" layoutY="156.0" text="UserName : " textFill="#0a9e12">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="126.0" layoutY="222.0" text="Password : " textFill="#0a9e12">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="126.0" layoutY="291.0" text="Email : " textFill="#0a9e12">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="126.0" layoutY="355.0" text="Other : " textFill="#0a9e12">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="827.0" layoutY="438.0" text="Profile Image" textFill="#0a9e12">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <TextField layoutX="267.0" layoutY="147.0" prefHeight="35.0" prefWidth="300.0" />
+      <TextField layoutX="267.0" layoutY="213.0" prefHeight="35.0" prefWidth="300.0" />
+      <TextField layoutX="267.0" layoutY="282.0" prefHeight="35.0" prefWidth="300.0" />
+      <TextField layoutX="267.0" layoutY="346.0" prefHeight="35.0" prefWidth="300.0" />
+      <ImageView fitHeight="300.0" fitWidth="300.0" layoutX="705.0" layoutY="119.0" pickOnBounds="true">
+         <image>
+            <Image url="@../images/photo-1519922639192-e73293ca430e.PNG" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

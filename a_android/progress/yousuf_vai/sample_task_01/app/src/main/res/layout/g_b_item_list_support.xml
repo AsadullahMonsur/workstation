@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/g_b_item_list_support_card"
+        android:layout_height="233dp"
+        android:layout_width="match_parent"
+        android:backgroundTint="@color/blue"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="8dp"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:id="@+id/g_b_item_list_support_card_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/g_b_item_list_support_card_port_01"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/white">
+            <TextView
+                android:id="@+id/g_b_item_list_port_01_tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/component_name"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textSize="21sp"
+                android:textStyle="italic|bold"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/g_b_item_list_support_card_port_02"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/green"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/g_b_item_list_support_card_port_01">
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/g_b_item_list_support_card_port_03"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/white"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/g_b_item_list_support_card_port_02">
+        </RelativeLayout>
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+</RelativeLayout>

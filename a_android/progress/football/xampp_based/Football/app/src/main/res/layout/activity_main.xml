@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="30dp"
+        android:background="@color/BackGround">
+
+    <TextView
+        android:layout_width             = "wrap_content"
+        android:layout_height            = "wrap_content"
+        android:layout_marginTop         = "20dp"
+        android:layout_centerHorizontal  = "true"
+
+        android:text                     = "@string/sign_in_as"
+        android:textSize                 = "30sp"
+        android:textColor                = "@color/TextColor"
+        />
+
+    <TextView
+        android:layout_width             = "wrap_content"
+        android:layout_height            = "wrap_content"
+        android:layout_marginTop         = "410dp"
+        android:layout_centerHorizontal  = "true"
+
+        android:text                     = "@string/or"
+        android:textSize                 = "30sp"
+
+        android:textColor                = "@color/TextColor"
+        />
+
+    <Button
+        android:id                      = "@+id/owner"
+        android:layout_width            = "250dp"
+        android:layout_height           = "30dp"
+        android:layout_marginTop        = "110dp"
+        android:layout_centerHorizontal = "true"
+
+        android:text                    = "@string/owner"
+        android:textSize                = "18sp"
+
+        android:textColor               = "@color/TextColor2"
+        android:background              = "@color/ButtonColor"
+
+        android:onClick                 = "clickIt"
+        />
+
+
+    <Button
+        android:id                      = "@+id/manager"
+        android:layout_width            = "250dp"
+        android:layout_height           = "30dp"
+        android:layout_marginTop        = "180dp"
+        android:layout_centerHorizontal = "true"
+
+        android:text                    = "@string/manager"
+        android:textSize                = "18sp"
+
+        android:textColor               = "@color/TextColor2"
+        android:background              = "@color/ButtonColor"
+        android:onClick                 = "clickIt"
+
+        />
+
+    <Button
+        android:id                      = "@+id/player"
+        android:layout_width            = "250dp"
+        android:layout_height           = "30dp"
+        android:layout_marginTop        = "250dp"
+        android:layout_centerHorizontal = "true"
+
+        android:text                    = "@string/player"
+        android:textSize                = "18sp"
+
+        android:textColor               = "@color/TextColor2"
+        android:background              = "@color/ButtonColor"
+        android:onClick                 = "clickIt"
+        />
+
+    <Button
+        android:id                      = "@+id/general"
+        android:layout_width            = "250dp"
+        android:layout_height           = "30dp"
+        android:layout_marginTop        = "330dp"
+        android:layout_centerHorizontal = "true"
+
+        android:text                    = "@string/general_user"
+        android:textSize                = "18sp"
+
+        android:textColor               = "@color/TextColor2"
+        android:background              = "@color/ButtonColor"
+        android:onClick                 = "clickIt"
+        />
+
+
+    <Button
+        android:id                      = "@+id/SignUp"
+        android:layout_width            = "250dp"
+        android:layout_height           = "30dp"
+        android:layout_marginTop        = "480dp"
+        android:layout_centerHorizontal = "true"
+
+        android:text                    = "@string/sign_up"
+        android:textSize                = "18sp"
+
+        android:textColor               = "@color/TextColor2"
+        android:background              = "@color/ButtonColor"
+        android:onClick                 = "clickIt"
+        />
+
+
+</RelativeLayout>
+</ScrollView>

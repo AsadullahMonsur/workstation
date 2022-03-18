@@ -1,0 +1,6 @@
+.text { 
+ -fx-font-smoothing-type: lcd;
+ -fx-fill: white;
+ -fx-font-size: 11pt;
+ -fx-font-family: "Lucida Console", Courier, monospace;
+}

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane fx:id="darkroom_top_bar_container" prefHeight="60.0" prefWidth="880.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.orangeflower.darkroom_manager.DarkroomTopBar">
+   <children>
+      <HBox AnchorPane.bottomAnchor="12.5" AnchorPane.leftAnchor="12.5" AnchorPane.topAnchor="12.5">
+         <children>
+            <ImageView fx:id="darkroom_top_bar_menu_img_btn" fitHeight="35.0" fitWidth="35.0" onMouseClicked="#side_bar_visualizer" onMouseEntered="#menu_hover_on_enter" onMouseExited="#menu_hover_on_exit" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/menu_bar/menu_icon_05_45x45.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

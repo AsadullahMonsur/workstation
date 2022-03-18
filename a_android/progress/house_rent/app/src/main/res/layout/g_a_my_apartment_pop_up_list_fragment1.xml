@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginBottom="15dp"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center|top"
+    android:background="@color/White"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/g_a_my_apartment_pop_up_list_upper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/g_a_my_apartment_pop_up_list_frag1_img_01"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        app:srcCompat="@drawable/ic_image_black_60dp" />
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/g_a_my_apartment_pop_up_list_frag1_tv_01"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:background="@color/White"
+        android:fontFamily="sans-serif"
+        android:text="@string/filename_type"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:layout_marginLeft="320dp"
+        android:id="@+id/g_a_my_apartment_pop_up_list_frag1_img_02"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        app:srcCompat="@drawable/loading" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/g_a_my_apartment_pop_up_list_lower"
+        android:layout_below="@+id/g_a_my_apartment_pop_up_list_upper"
+        android:layout_width="match_parent"
+        android:background="#54585e"
+        android:layout_height="1dp" >
+    </RelativeLayout>
+</RelativeLayout>

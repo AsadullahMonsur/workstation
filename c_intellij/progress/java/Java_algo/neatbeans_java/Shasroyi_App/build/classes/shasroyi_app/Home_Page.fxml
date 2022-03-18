@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<ScrollPane prefHeight="720.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="shasroyi_app.Home_PageController">
+   <content>
+      <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="1000.0" prefWidth="1400.0" translateZ="-1.0">
+         <top>
+            <AnchorPane prefHeight="400.0" prefWidth="1400.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="400.0" fitWidth="1400.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../images/child_shopping_bags_happiness_54451_1280x720.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </top>
+         <left>
+            <AnchorPane prefHeight="400.0" prefWidth="300.0" style="-fx-background-color: #6e0219;" BorderPane.alignment="CENTER">
+               <children>
+                  <Button layoutX="1.0" layoutY="70.0" mnemonicParsing="false" onAction="#move_to_personal_info" prefHeight="35.0" prefWidth="310.0" text="Personal Info" />
+                  <Button layoutX="1.0" layoutY="167.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="310.0" text="Search Product" />
+                  <Button layoutX="1.0" layoutY="254.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="310.0" text="Summary" />
+                  <Button layoutX="1.0" layoutY="353.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="310.0" text="Others" />
+                  <Button layoutX="1.0" layoutY="446.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="310.0" text="Log Out" />
+               </children>
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin></AnchorPane>
+         </left>
+         <bottom>
+            <AnchorPane prefHeight="50.0" prefWidth="1400.0" style="-fx-background-color: #69026e;" BorderPane.alignment="CENTER" />
+         </bottom>
+         <center>
+            <AnchorPane fx:id="customer_Middle_Content" prefHeight="692.0" prefWidth="1089.0" style="-fx-background-color: #026c6e;" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
+   </content>
+</ScrollPane>

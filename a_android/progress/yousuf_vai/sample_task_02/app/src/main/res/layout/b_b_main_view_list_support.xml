@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/b_b_main_view_list_support_card"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        app:cardCornerRadius="15dp"
+        app:cardUseCompatPadding="true"
+        android:elevation="32dp"
+        android:theme="@style/Theme.MaterialComponents.Light">
+
+        <RelativeLayout
+            android:id="@+id/b_b_main_view_list_support_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <RelativeLayout
+                android:id="@+id/b_b_main_view_list_support_port_01"
+                android:layout_width="100dp"
+                android:layout_height="150dp"
+                android:background="@color/Blue6">
+
+                <ImageView
+                    android:id="@+id/b_b_main_view_list_support_port_01_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/off"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/b_b_main_view_list_support_port_02"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/TextColor2"
+                android:gravity="center"
+                android:layout_toEndOf="@+id/b_b_main_view_list_support_port_01">
+
+                <TextView
+                    android:id="@+id/b_b_main_view_list_support_port_02_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/random_id_contact"
+                    android:gravity="center"
+                    android:textStyle="italic|bold"
+                    android:textAllCaps="false"
+                    android:textAlignment="center"
+                    android:textColor="@color/Blue6"
+                    android:textSize="19sp"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</RelativeLayout>

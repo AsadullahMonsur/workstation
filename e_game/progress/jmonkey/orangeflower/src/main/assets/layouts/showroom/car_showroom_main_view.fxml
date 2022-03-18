@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="showroom_main_view_base" prefHeight="560.0" prefWidth="880.0" style="-fx-background-color: #100d0d;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.orangeflower.showroom.CarShowroomMainView">
+   <children>
+      <AnchorPane fx:id="showroom_tab_bar" layoutX="141.0" prefHeight="35.0" prefWidth="880.0" style="-fx-background-color: #100d0d;" AnchorPane.leftAnchor="130.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #100d0d;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <VBox fx:id="showroom_top_bar_tab_01" prefHeight="35.0" prefWidth="180.0" style="-fx-background-color: #02c92a;">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <children>
+                        <Button fx:id="showroom_top_bar_tab_01_btn" mnemonicParsing="false" onMouseClicked="#top_bar__tab_01_clicked" onMouseEntered="#top_bar__tab_01_entered" onMouseExited="#top_bar__tab_01_exited" prefHeight="31.0" prefWidth="180.0" style="-fx-background-color: black;" text="Current Car" textFill="WHITE">
+                           <font>
+                              <Font name="Comic Sans MS Bold" size="14.0" />
+                           </font>
+                        </Button>
+                        <HBox fx:id="showroom_top_bar_tab_01_fill_holder" alignment="CENTER" prefHeight="4.0" prefWidth="180.0" style="-fx-background-color: black;">
+                           <children>
+                              <AnchorPane fx:id="showroom_top_bar_tab_01_fill_left" prefHeight="4.0" prefWidth="90.0" style="-fx-background-color: black;" />
+                              <AnchorPane fx:id="showroom_top_bar_tab_01_fill_right" prefHeight="4.0" prefWidth="90.0" style="-fx-background-color: black;" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox fx:id="showroom_top_bar_tab_02" prefHeight="35.0" prefWidth="180.0" style="-fx-background-color: #02c92a;">
+                     <children>
+                        <Button fx:id="showroom_top_bar_tab_02_btn" mnemonicParsing="false" onMouseClicked="#top_bar__tab_02_clicked" onMouseEntered="#top_bar__tab_02_entered" onMouseExited="#top_bar__tab_02_exited" prefHeight="31.0" prefWidth="180.0" style="-fx-background-color: black;" text="Default Cars" textFill="WHITE">
+                           <font>
+                              <Font name="Comic Sans MS Bold" size="14.0" />
+                           </font>
+                        </Button>
+                        <HBox fx:id="showroom_top_bar_tab_02_fill_holder" alignment="CENTER" prefHeight="4.0" prefWidth="180.0" style="-fx-background-color: black;">
+                           <children>
+                              <AnchorPane fx:id="showroom_top_bar_tab_02_fill_left" prefHeight="4.0" prefWidth="90.0" style="-fx-background-color: black;" />
+                              <AnchorPane fx:id="showroom_top_bar_tab_02_fill_right" prefHeight="4.0" prefWidth="90.0" style="-fx-background-color: black;" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox fx:id="showroom_top_bar_tab_03" prefHeight="35.0" prefWidth="180.0" style="-fx-background-color: #02c92a;">
+                     <children>
+                        <Button fx:id="showroom_top_bar_tab_03_btn" mnemonicParsing="false" onMouseClicked="#top_bar__tab_03_clicked" onMouseEntered="#top_bar__tab_03_entered" onMouseExited="#top_bar__tab_03_exited" prefHeight="31.0" prefWidth="180.0" style="-fx-background-color: black;" text="Custom Cars" textFill="WHITE">
+                           <font>
+                              <Font name="Comic Sans MS Bold" size="14.0" />
+                           </font>
+                        </Button>
+                        <HBox fx:id="showroom_top_bar_tab_03_fill_holder" alignment="CENTER" prefHeight="4.0" prefWidth="180.0" style="-fx-background-color: black;">
+                           <children>
+                              <AnchorPane fx:id="showroom_top_bar_tab_03_fill_left" prefHeight="4.0" prefWidth="90.0" style="-fx-background-color: black;" />
+                              <AnchorPane fx:id="showroom_top_bar_tab_03_fill_right" prefHeight="4.0" prefWidth="90.0" style="-fx-background-color: black;" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox fx:id="showroom_top_bar_tab_04" prefHeight="35.0" prefWidth="180.0" style="-fx-background-color: #02c92a;">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <children>
+                        <Button fx:id="showroom_top_bar_tab_04_btn" mnemonicParsing="false" onMouseClicked="#top_bar__tab_04_clicked" onMouseEntered="#top_bar__tab_04_entered" onMouseExited="#top_bar__tab_04_exited" prefHeight="31.0" prefWidth="180.0" style="-fx-background-color: black;" text="Buy Cars from Online" textFill="WHITE">
+                           <font>
+                              <Font name="Comic Sans MS Bold" size="14.0" />
+                           </font>
+                        </Button>
+                        <HBox fx:id="showroom_top_bar_tab_04_fill_holder" alignment="CENTER" prefHeight="4.0" prefWidth="180.0" style="-fx-background-color: black;">
+                           <children>
+                              <AnchorPane fx:id="showroom_top_bar_tab_04_fill_left" prefHeight="4.0" prefWidth="90.0" style="-fx-background-color: black;" />
+                              <AnchorPane fx:id="showroom_top_bar_tab_04_fill_right" prefHeight="4.0" prefWidth="90.0" style="-fx-background-color: black;" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children></AnchorPane>
+      <AnchorPane fx:id="showroom_side_bar" layoutX="14.0" layoutY="135.0" onMouseExited="#on_drop_down_hover_exited" prefHeight="525.0" prefWidth="120.0" style="-fx-background-color: #100d0d;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="35.0">
+         <children>
+            <VBox layoutX="20.0" layoutY="54.0" prefHeight="525.0" prefWidth="120.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <ImageView fx:id="showroom_drop_down_menu_img_btn" fitHeight="50.0" fitWidth="120.0" onMouseEntered="#on_drop_down_hover_entered" pickOnBounds="true">
+                     <image>
+                        <Image url="@../../images/menu_bar/dropdown_menu_icon_01.png" />
+                     </image>
+                  </ImageView>
+                  <AnchorPane fx:id="showroom_drop_down_panel" prefHeight="475.0" prefWidth="120.0" style="-fx-background-color: #100d0d;">
+                     <children>
+                        <VBox layoutX="10.0" layoutY="58.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <ImageView fitHeight="50.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true">
+                                 <VBox.margin>
+                                    <Insets top="75.0" />
+                                 </VBox.margin>
+                              </ImageView>
+                              <ImageView fitHeight="50.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true">
+                                 <VBox.margin>
+                                    <Insets top="25.0" />
+                                 </VBox.margin>
+                              </ImageView>
+                              <ImageView fitHeight="50.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true">
+                                 <VBox.margin>
+                                    <Insets top="25.0" />
+                                 </VBox.margin>
+                              </ImageView>
+                              <ImageView fitHeight="50.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true">
+                                 <VBox.margin>
+                                    <Insets top="25.0" />
+                                 </VBox.margin>
+                              </ImageView>
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
+         </children></AnchorPane>
+      <AnchorPane fx:id="showroom_car_viewer" prefHeight="525.0" prefWidth="800.0" style="-fx-background-color: #100d0d;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="130.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="35.0" />
+   </children>
+</AnchorPane>

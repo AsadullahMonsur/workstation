@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.glow_blow">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/glow_blow_app_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/glow_blow_app_icon_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.GlowBlow">
+
+        <activity
+            android:exported="true"
+            android:name=".game_launcher.GameLauncher"
+            android:screenOrientation="landscape"
+            tools:ignore="LockedOrientationActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:exported="true"
+            android:name=".game_prelims.GamePrelims"
+            android:screenOrientation="landscape"
+            tools:ignore="LockedOrientationActivity"/>
+        <activity
+            android:exported="true"
+            android:name=".game_menu.GameMenu"
+            android:screenOrientation="landscape"
+            tools:ignore="LockedOrientationActivity"/>
+    </application>
+
+</manifest>

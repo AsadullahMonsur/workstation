@@ -1,0 +1,137 @@
+<resources>
+    <string name="app_name">House Rent and Payment</string>
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
+
+    <string name="c_user_profile">Profile</string>
+
+    <string name="d_payment">Payment</string>
+
+    <string name="e_messages">Messages</string>
+
+    <string name="j_logout">Log Out</string>
+    <string name="i_available_rent">Available Rent</string>
+    <string name="h_my_rent">My Rent</string>
+    <string name="g_my_apartment">My Apartment</string>
+    <string name="f_news_notify"><![CDATA[News & Notifications]]></string>
+    <string name="enter_user_mail_address">Enter Your Email Address</string>
+    <string name="enter_password">Enter Your Password (minimum 6 digit)</string>
+    <string name="log_in_info">Log In Information</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="log_in">Log In</string>
+    <string name="move_to_sign_up">Be A Member!!</string>
+    <string name="choice">Or</string>
+    <string name="move_to_sign_in">Already Have An Account?</string>
+    <string name="submit_sign_up">Submit Info</string>
+    <string name="sign_up_info">Sign Up Form</string>
+    <string name="enter_first_name">Enter First Name</string>
+    <string name="enter_last_name">Enter Last Name</string>
+    <string name="enter_sign_up_user_mail_address">Enter A Valid Email Address</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="select">select</string>
+    <string name="delete">delete</string>
+    <string name="copy">copy</string>
+    <string name="paste">paste</string>
+
+    <string name="cont0_tab1" >Tab 1</string>
+    <string name="cont0_tab2">Tab 2</string>
+    <string name="cont0_tab3">Tab 3</string>
+
+    <string name="large_text">
+        "A material metaphor is the unifying theory of a rationalized space and a system of motion."
+        "The material is grounded in tactile reality, inspired by the study of paper and ink, yet "
+        "technologically advanced and open to imagination and magic.\n"
+        "Surfaces and edges of the material provide visual cues that are grounded in reality. The "
+        "use of familiar tactile attributes helps users quickly understand affordances. Yet the "
+        "flexibility of the material creates new affordances that supercede those in the physical "
+        "world, without breaking the rules of physics.\n"
+        "The fundamentals of light, surface, and movement are key to conveying how objects move, "
+        "interact, and exist in space and in relation to each other. Realistic lighting shows "
+        "seams, divides space, and indicates moving parts.\n\n"
+    </string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="b_user_home">Home</string>
+    <string name="cont1_tab1">User Info</string>
+    <string name="cont1_tab2">Personal Info</string>
+    <string name="cont2_tab1">Payment Slip</string>
+    <string name="cont2_tab2">Payment Options</string>
+    <string name="cont2_tab3">Transactions</string>
+    <string name="cont3_tab1">Write SMS</string>
+    <string name="cont3_tab2">Inbox</string>
+    <string name="cont3_tab3">Sent</string>
+    <string name="cont4_tab1">My Subscription</string>
+    <string name="cont4_tab2">All News</string>
+    <string name="cont4_tab3">App Notifications</string>
+    <string name="cont5_tab1">Add Apartment</string>
+    <string name="cont5_tab2">My List</string>
+    <string name="cont6_tab1">Subscribe</string>
+    <string name="cont6_tab2">Current Rents</string>
+    <string name="cont6_tab3">All Rents</string>
+    <string name="cont7_tab1">Available List </string>
+    <string name="search">Search</string>
+    <string name="username">Username :</string>
+    <string name="password">Password :</string>
+    <string name="security_text">Allow security code to \'Sign In\' :</string>
+    <string name="firstname">First Name :</string>
+    <string name="secondname">Second Name :</string>
+    <string name="email">Email :</string>
+    <string name="national_id">National ID :</string>
+    <string name="contact_no">Contact Number :</string>
+    <string name="upload_photo">Upload Photo :</string>
+    <string name="add_new_rent">~Add Rent~</string>
+    <string name="collect_rent_id">Collect Rent Id :</string>
+    <string name="owner_name">Owner Name :</string>
+    <string name="address">Address :</string>
+    <string name="rent_amount">Rent Amount :</string>
+    <string name="facility">Facilities :</string>
+    <string name="active_status">Active Status :</string>
+    <string name="hrp_logo2">hrp_logo2</string>
+    <string name="hrp_logo1">hrp_logo1</string>
+    <string name="images_of_house">images of house</string>
+    <string name="publish">Publish Rent</string>
+    <string name="save">Save</string>
+    <string name="tap_to_get_code">Tap The Button To Get Code</string>
+    <string name="ownername">ownername</string>
+    <string name="confirm_location">Confirm Location Information</string>
+    <string name="rent_amount_def">000</string>
+    <string name="description_of_home">Description of Home</string>
+    <string name="photo_upload">Photo Upload</string>
+    <string name="filename_type">Filename.type</string>
+    <string name="submit_rate">Submit Rate</string>
+    <string name="loading">loading</string>
+    <string name="location_hint">Location :</string>
+    <string name="amount_hint">Amount :</string>
+    <string name="zero_amount">0000000</string>
+    <string name="contact_number_hint">Contact Number :</string>
+    <string name="description_hint">Description</string>
+    <string name="enter_another_number">Enter Another Number</string>
+    <string name="general_information">General   Information</string>
+    <string name="publish_date">Publish Date</string>
+    <string name="rent_date">Rent Date</string>
+    <string name="unknown_date">12-21-1221</string>
+    <string name="available_for_rent">Available for Rent</string>
+    <string name="not_rented_yet">Not Rented Yet</string>
+    <string name="owners_current_rate">Owners Current Rating</string>
+    <string name="proposal_hint_0">Subscribe</string>
+    <string name="go_to_google_map">Go to Google Map</string>
+    <string name="view_details">View Details</string>
+    <string name="set_your_phone_number">Set Your Phone Number</string>
+    <string name="enter_mobile_number_here">enter number here without country code</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">Ok</string>
+    <string name="enter_your_current_password">Enter Your Current Password</string>
+    <string name="pending">Pending</string>
+    <string name="enter_new_data">Enter New Data</string>
+    <string name="type_here">Type Here</string>
+    <string name="verify_number">Verify Number</string>
+    <string name="enter_code_from_sms_or_email">Enter Code from SMS or Email</string>
+
+    <string-array name="currency_list">
+        <item>Currency($)</item>
+        <item>BDT</item>
+        <item>US</item>
+        <item>GBP</item>
+    </string-array>
+
+</resources>

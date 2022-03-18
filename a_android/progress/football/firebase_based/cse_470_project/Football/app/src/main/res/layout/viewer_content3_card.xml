@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:background="@color/White">
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:text="Previous Matches Info"
+        android:textSize="25dp"
+        android:textAlignment="center"
+        />
+
+    <GridView
+        android:id="@+id/viewer_cont3_gv"
+        android:layout_width="300dp"
+        android:layout_height="400dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="100dp"
+        android:background="@color/Green3"
+        android:horizontalSpacing="30dp"
+        android:numColumns="1"
+        android:verticalSpacing="30dp" />
+
+
+
+</RelativeLayout>

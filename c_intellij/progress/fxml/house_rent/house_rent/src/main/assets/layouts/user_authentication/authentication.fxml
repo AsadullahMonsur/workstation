@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id="authentication_root_content" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="310.0" minWidth="512.0" onMouseDragged="#drag_screen_to_place" onMousePressed="#press_to_pick_screen" prefHeight="620.0" prefWidth="1024.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.house_rent_and_payment.user_authentication.UserAuthentication">
+   <children>
+      <VBox fx:id="authentication_container" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="620.0" prefWidth="1024.0" style="-fx-background-color: black;">
+         <children>
+            <HBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="560.0" prefWidth="1024.0" style="-fx-background-color: white;">
+               <children>
+                  <AnchorPane fx:id="sign_up_container" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="560.0" prefWidth="512.0" style="-fx-background-color: red;">
+                     <children>
+                        <VBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="560.0" prefWidth="512.0" spacing="5.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <HBox prefHeight="80.0" prefWidth="512.0">
+                                 <children>
+                                    <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="80.0" prefWidth="520.0">
+                                       <children>
+                                          <Text fontSmoothingType="LCD" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" text="Sign Up" textAlignment="CENTER" wrappingWidth="150.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="180.0" AnchorPane.rightAnchor="180.0" AnchorPane.topAnchor="20.0">
+                                             <font>
+                                                <Font size="22.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </HBox>
+                              <HBox layoutX="10.0" layoutY="10.0" prefHeight="80.0" prefWidth="512.0">
+                                 <children>
+                                    <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="80.0" prefWidth="256.0">
+                                       <children>
+                                          <TextField fx:id="user_first_name" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="30.0" prefWidth="240.0" promptText="Enter First Name" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="20.0" />
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="80.0" prefWidth="256.0">
+                                       <children>
+                                          <TextField fx:id="user_last_name" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="30.0" prefWidth="240.0" promptText="Enter Second Name" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="20.0" />
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </HBox>
+                              <HBox layoutX="10.0" layoutY="110.0" prefHeight="80.0" prefWidth="512.0">
+                                 <children>
+                                    <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="80.0" prefWidth="520.0">
+                                       <children>
+                                          <TextField fx:id="user_mail_input_02" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="30.0" prefWidth="400.0" promptText="Enter Your Email Address" styleClass="user_input" stylesheets="@../../stylesheets/user_authentication/user_authentication.css" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="75.0" AnchorPane.topAnchor="5.0">
+                                             <font>
+                                                <Font name="System Italic" size="13.0" />
+                                             </font>
+                                          </TextField>
+                                          <Label fx:id="mail_limit_label_02" alignment="CENTER" graphicTextGap="8.0" prefHeight="30.0" prefWidth="50.0" styleClass="input_limit" stylesheets="@../../stylesheets/user_authentication/user_authentication.css" text="0/50" textAlignment="CENTER" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="45.0">
+                                             <font>
+                                                <Font name="System Bold Italic" size="13.0" />
+                                             </font>
+                                          </Label>
+                                          <ImageView fx:id="mail_validity_signal_02" fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="445.0" AnchorPane.topAnchor="15.0">
+                                             <image>
+                                                <Image url="@../../stylesheets/user_authentication/red_circle_30x30.png" />
+                                             </image>
+                                          </ImageView>
+                                       </children></AnchorPane>
+                                 </children>
+                              </HBox>
+                              <HBox layoutX="10.0" layoutY="10.0" prefHeight="80.0" prefWidth="512.0">
+                                 <children>
+                                    <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="80.0" prefWidth="520.0">
+                                       <children>
+                                          <TextField fx:id="user_password_input_02_dummy" focusTraversable="false" layoutX="25.0" layoutY="15.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="30.0" prefWidth="300.0" promptText="Enter Your Password (More than 5 Digits)" styleClass="user_password" stylesheets="@../../stylesheets/user_authentication/user_authentication.css" AnchorPane.bottomAnchor="33.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="105.0" AnchorPane.topAnchor="5.0">
+                                             <font>
+                                                <Font name="System Italic" size="13.0" />
+                                             </font>
+                                             <cursor>
+                                                <Cursor fx:constant="NONE" />
+                                             </cursor>
+                                          </TextField>
+                                          <TextField fx:id="user_password_input_02" maxHeight="-Infinity" maxWidth="-Infinity" opacity="0.0" prefHeight="30.0" prefWidth="300.0" promptText="Enter Your Password (More than 5 Digits)" styleClass="user_password" stylesheets="@../../stylesheets/user_authentication/user_authentication.css" AnchorPane.bottomAnchor="33.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="105.0" AnchorPane.topAnchor="5.0">
+                                             <font>
+                                                <Font name="System Italic" size="13.0" />
+                                             </font>
+                                          </TextField>
+                                          <Label fx:id="password_limit_label_02" alignment="CENTER" graphicTextGap="8.0" prefHeight="30.0" prefWidth="50.0" styleClass="input_limit" stylesheets="@../../stylesheets/user_authentication/user_authentication.css" text="0/10" textAlignment="CENTER" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="45.0">
+                                             <font>
+                                                <Font name="System Bold Italic" size="13.0" />
+                                             </font>
+                                          </Label>
+                                          <ImageView fx:id="password_validity_signal_02" fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="415.0" AnchorPane.topAnchor="15.0">
+                                             <image>
+                                                <Image url="@../../stylesheets/user_authentication/red_circle_30x30.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView fx:id="password_visibility_img_02" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="350.0" AnchorPane.topAnchor="50.0">
+                                             <image>
+                                                <Image url="@../../stylesheets/user_authentication/red_circle_30x30.png" />
+                                             </image>
+                                          </ImageView>
+                                       </children></AnchorPane>
+                                 </children>
+                              </HBox>
+                              <HBox layoutX="10.0" layoutY="110.0" prefHeight="80.0" prefWidth="512.0">
+                                 <children>
+                                    <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="80.0" prefWidth="520.0">
+                                       <children>
+                                          <TextField fx:id="user_password_input_03_dummy" focusTraversable="false" layoutX="25.0" layoutY="15.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="30.0" prefWidth="300.0" promptText="Confirm Your Password" styleClass="user_password" stylesheets="@../../stylesheets/user_authentication/user_authentication.css" AnchorPane.bottomAnchor="33.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="105.0" AnchorPane.topAnchor="5.0">
+                                             <font>
+                                                <Font name="System Italic" size="13.0" />
+                                             </font>
+                                             <cursor>
+                                                <Cursor fx:constant="NONE" />
+                                             </cursor>
+                                          </TextField>
+                                          <TextField fx:id="user_password_input_03" maxHeight="-Infinity" maxWidth="-Infinity" opacity="0.0" prefHeight="30.0" prefWidth="300.0" promptText="Confirm Your Password" styleClass="user_password" stylesheets="@../../stylesheets/user_authentication/user_authentication.css" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="105.0" AnchorPane.topAnchor="5.0">
+                                             <font>
+                                                <Font name="System Italic" size="13.0" />
+                                             </font>
+                                          </TextField>
+                                          <Label fx:id="password_limit_label_03" alignment="CENTER" graphicTextGap="8.0" prefHeight="30.0" prefWidth="50.0" styleClass="input_limit" stylesheets="@../../stylesheets/user_authentication/user_authentication.css" text="0/10" textAlignment="CENTER" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="45.0">
+                                             <font>
+                                                <Font name="System Bold Italic" size="13.0" />
+                                             </font>
+                                          </Label>
+                                          <ImageView fx:id="password_validity_signal_03" fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="415.0" AnchorPane.topAnchor="15.0">
+                                             <image>
+                                                <Image url="@../../stylesheets/user_authentication/red_circle_30x30.png" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView fx:id="password_visibility_img_03" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="350.0" AnchorPane.topAnchor="50.0">
+                                             <image>
+                                                <Image url="@../../stylesheets/user_authentication/red_circle_30x30.png" />
+                                             </image>
+                                          </ImageView>
+                                       </children></AnchorPane>
+                                 </children>
+                              </HBox>
+                              <HBox layoutX="10.0" layoutY="210.0" prefHeight="80.0" prefWidth="512.0">
+                                 <children>
+                                    <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="80.0" prefWidth="520.0">
+                                       <children>
+                                          <ProgressIndicator fx:id="progress_bar_02" prefHeight="50.0" prefWidth="50.0" AnchorPane.leftAnchor="400.0" AnchorPane.rightAnchor="45.0" AnchorPane.topAnchor="15.0">
+                                             <effect>
+                                                <Glow level="1.0">
+                                                   <input>
+                                                      <Lighting>
+                                                         <bumpInput>
+                                                            <Shadow />
+                                                         </bumpInput>
+                                                         <light>
+                                                            <Light.Distant>
+                                                               <color>
+                                                                  <Color red="0.11480161547660828" green="0.11117202788591385" blue="0.32894736528396606" />
+                                                               </color>
+                                                            </Light.Distant>
+                                                         </light>
+                                                      </Lighting>
+                                                   </input>
+                                                </Glow>
+                                             </effect>
+                                          </ProgressIndicator>
+                                          <Label fx:id="password_hint_02" alignment="CENTER" contentDisplay="CENTER" prefHeight="65.0" prefWidth="310.0" styleClass="user_password_hint" stylesheets="@../../stylesheets/user_authentication/user_authentication.css" text="Hint: name can contain only (letter and number) and password must contain at least one digit from cases of lower [a-z],upper [A-Z],number [0-9],special character [!,@ etc]" textAlignment="CENTER" wrapText="true" AnchorPane.leftAnchor="65.0" AnchorPane.topAnchor="5.0">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                       </children></AnchorPane>
+                                 </children>
+                              </HBox>
+                              <HBox layoutX="10.0" layoutY="476.0" prefHeight="80.0" prefWidth="512.0">
+                                 <children>
+                                    <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="80.0" prefWidth="520.0">
+                                       <children>
+                                          <Button fx:id="sign_up_btn" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="40.0" prefWidth="350.0" stylesheets="@../../stylesheets/user_authentication/user_authentication.css" text="Continue" textAlignment="CENTER" AnchorPane.leftAnchor="45.0" AnchorPane.rightAnchor="125.0" AnchorPane.topAnchor="20.0">
+                                             <font>
+                                                <Font name="Comic Sans MS Bold Italic" size="16.0" />
+                                             </font>
+                                          </Button>
+                                          <ImageView fx:id="user_validity_signal_02" fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="415.0" AnchorPane.topAnchor="30.0">
+                                             <image>
+                                                <Image url="@../../stylesheets/user_authentication/red_circle_30x30.png" />
+                                             </image>
+                                          </ImageView>
+                                       </children></AnchorPane>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="sign_in_container" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="560.0" prefWidth="512.0" style="-fx-background-color: green;">
+                     <children>
+                        <VBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="560.0" prefWidth="512.0" spacing="10.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <HBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="80.0" prefWidth="560.0" style="-fx-background-color: #ffffff;">
+                                 <children>
+                                    <AnchorPane prefHeight="80.0" prefWidth="512.0">
+                                       <children>
+                                          <Text fx:id="authentication_sign_in_txt" fontSmoothingType="LCD" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" text="Sign In" textAlignment="CENTER" wrappingWidth="150.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="180.0" AnchorPane.rightAnchor="180.0" AnchorPane.topAnchor="20.0">
+                                             <font>
+                                                <Font name="Ebrima" size="22.0" />
+                                             </font>
+                                             <effect>
+                                                <Bloom threshold="0.31" />
+                                             </effect>
+                                          </Text>
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </HBox>
+                              <HBox layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="80.0" prefWidth="560.0" style="-fx-background-color: #ffffff;">
+                                 <children>
+                                    <AnchorPane prefHeight="80.0" prefWidth="512.0" style="-fx-background-color: #ffffff;">
+                                       <children>
+                                          <TextField fx:id="user_mail_input_01" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="30.0" prefWidth="400.0" promptText="Enter Your Email Address" styleClass="user_input" stylesheets="@../../stylesheets/user_authentication/user_authentication.css" AnchorPane.leftAnchor="45.0" AnchorPane.rightAnchor="5.0">
+                                             <font>
+                                                <Font name="System Italic" size="13.0" />
+                                             </font>
+                                          </TextField>
+                                          <Label fx:id="mail_limit_label_01" alignment="CENTER" graphicTextGap="8.0" prefHeight="30.0" prefWidth="50.0" styleClass="input_limit" stylesheets="@../../stylesheets/user_authentication/user_authentication.css" text="0/50" textAlignment="CENTER" AnchorPane.leftAnchor="75.0" AnchorPane.topAnchor="40.0">
+                                             <font>
+                                                <Font name="System Bold Italic" size="13.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="80.0" prefWidth="64.0" style="-fx-background-color: #ffffff;">
+                                       <children>
+                                          <ImageView fx:id="mail_validity_signal_01" fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="11.0" AnchorPane.rightAnchor="11.0" AnchorPane.topAnchor="10.0">
+                                             <image>
+                                                <Image url="@../../stylesheets/user_authentication/red_circle_30x30.png" />
+                                             </image>
+                                          </ImageView>
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </HBox>
+                              <HBox layoutX="10.0" layoutY="120.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="80.0" prefWidth="560.0" style="-fx-background-color: #ffffff;">
+                                 <children>
+                                    <AnchorPane prefHeight="80.0" prefWidth="512.0" style="-fx-background-color: #ffffff;">
+                                       <children>
+                                          <TextField fx:id="user_password_input_01_dummy" focusTraversable="false" layoutX="55.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="30.0" prefWidth="400.0" promptText="Enter Your Password (More than 5 Digits)" styleClass="user_password" stylesheets="@../../stylesheets/user_authentication/user_authentication.css" AnchorPane.bottomAnchor="33.0" AnchorPane.leftAnchor="45.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="0.0">
+                                             <font>
+                                                <Font name="System Italic" size="13.0" />
+                                             </font>
+                                             <cursor>
+                                                <Cursor fx:constant="NONE" />
+                                             </cursor>
+                                          </TextField>
+                                          <TextField fx:id="user_password_input_01" maxHeight="-Infinity" maxWidth="-Infinity" opacity="0.0" prefHeight="30.0" prefWidth="400.0" promptText="Enter Your Password (More than 5 Digits)" styleClass="user_password" stylesheets="@../../stylesheets/user_authentication/user_authentication.css" AnchorPane.bottomAnchor="33.0" AnchorPane.leftAnchor="45.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="0.0">
+                                             <font>
+                                                <Font name="System Italic" size="13.0" />
+                                             </font>
+                                          </TextField>
+                                          <Label fx:id="password_limit_label_01" alignment="CENTER" graphicTextGap="8.0" prefHeight="30.0" prefWidth="50.0" styleClass="input_limit" stylesheets="@../../stylesheets/user_authentication/user_authentication.css" text="0/10" textAlignment="CENTER" AnchorPane.leftAnchor="75.0" AnchorPane.topAnchor="40.0">
+                                             <font>
+                                                <Font name="System Bold Italic" size="13.0" />
+                                             </font>
+                                          </Label>
+                                          <ImageView fx:id="password_visibility_img_01" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="420.0" AnchorPane.topAnchor="45.0">
+                                             <image>
+                                                <Image url="@../../stylesheets/user_authentication/red_circle_30x30.png" />
+                                             </image>
+                                          </ImageView>
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="80.0" prefWidth="64.0" style="-fx-background-color: #ffffff;">
+                                       <children>
+                                          <ImageView fx:id="password_validity_signal_01" fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="11.0" AnchorPane.rightAnchor="11.0" AnchorPane.topAnchor="10.0">
+                                             <image>
+                                                <Image url="@../../stylesheets/user_authentication/red_circle_30x30.png" />
+                                             </image>
+                                          </ImageView>
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </HBox>
+                              <HBox layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="80.0" prefWidth="560.0" style="-fx-background-color: #ffffff;">
+                                 <children>
+                                    <AnchorPane prefHeight="80.0" prefWidth="512.0" style="-fx-background-color: #ffffff;">
+                                       <children>
+                                          <Label fx:id="password_hint_01" alignment="CENTER" contentDisplay="CENTER" prefHeight="65.0" prefWidth="310.0" styleClass="user_password_hint" stylesheets="@../../stylesheets/user_authentication/user_authentication.css" text="Hint: password must contain at least one digit from cases of lower [a-z],upper [A-Z],number [0-9],special character [!,@ etc]" textAlignment="CENTER" wrapText="true" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="95.0" AnchorPane.topAnchor="5.0">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </HBox>
+                              <HBox layoutX="10.0" layoutY="120.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="80.0" prefWidth="560.0" style="-fx-background-color: #ffffff;">
+                                 <children>
+                                    <AnchorPane prefHeight="80.0" prefWidth="512.0" style="-fx-background-color: #ffffff;">
+                                       <children>
+                                          <Label fx:id="reset_password" alignment="CENTER" prefHeight="40.0" prefWidth="200.0" styleClass="reset_password_hint" stylesheets="@../../stylesheets/user_authentication/user_authentication.css" text="Reset Password?" textAlignment="CENTER" underline="true" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+                                             <font>
+                                                <Font name="System Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </HBox>
+                              <HBox layoutX="10.0" layoutY="230.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="80.0" prefWidth="560.0" style="-fx-background-color: #ffffff;">
+                                 <children>
+                                    <AnchorPane prefHeight="80.0" prefWidth="512.0" style="-fx-background-color: #ffffff;">
+                                       <children>
+                                          <Button fx:id="sign_in_btn" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="40.0" prefWidth="350.0" stylesheets="@../../stylesheets/user_authentication/user_authentication.css" text="Continue" textAlignment="CENTER" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="95.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="20.0">
+                                             <font>
+                                                <Font name="Comic Sans MS Bold Italic" size="16.0" />
+                                             </font>
+                                          </Button>
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: #ffffff;">
+                                       <children>
+                                          <ImageView fx:id="user_validity_signal_01" fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="25.0">
+                                             <image>
+                                                <Image url="@../../stylesheets/user_authentication/red_circle_30x30.png" />
+                                             </image>
+                                          </ImageView>
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </HBox>
+                              <HBox layoutX="10.0" layoutY="485.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="80.0" prefWidth="560.0" style="-fx-background-color: #ffffff;">
+                                 <children>
+                                    <AnchorPane prefHeight="80.0" prefWidth="512.0" style="-fx-background-color: #ffffff;">
+                                       <children>
+                                          <ProgressIndicator fx:id="progress_bar_01" prefHeight="50.0" prefWidth="50.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="231.0" AnchorPane.rightAnchor="231.0" AnchorPane.topAnchor="10.0">
+                                             <effect>
+                                                <Glow level="1.0">
+                                                   <input>
+                                                      <Lighting>
+                                                         <bumpInput>
+                                                            <Shadow />
+                                                         </bumpInput>
+                                                         <light>
+                                                            <Light.Distant>
+                                                               <color>
+                                                                  <Color red="0.11480161547660828" green="0.11117202788591385" blue="0.32894736528396606" />
+                                                               </color>
+                                                            </Light.Distant>
+                                                         </light>
+                                                      </Lighting>
+                                                   </input>
+                                                </Glow>
+                                             </effect>
+                                          </ProgressIndicator>
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <AnchorPane fx:id="authentication_slider" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="620.0" prefWidth="512.0" style="-fx-background-color: black;">
+         <children>
+            <ToolBar fx:id="authentication_toolbar" prefHeight="30.0" prefWidth="80.0" style="-fx-background-color: white;" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <items>
+                  <ImageView fx:id="authentication_toolbar_minimize" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="authentication_toolbar_exit" fitHeight="30.0" fitWidth="30.0" layoutX="40.0" pickOnBounds="true" preserveRatio="true" />
+               </items>
+            </ToolBar>
+            <Label fx:id="bottom_note" alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="40.0" prefWidth="300.0" styleClass="user_password_hint" stylesheets="@../../stylesheets/user_authentication/user_authentication.css" text="Note:  Click Circle to Switch to Sign Up" textAlignment="CENTER" AnchorPane.leftAnchor="106.0" AnchorPane.rightAnchor="106.0" AnchorPane.topAnchor="575.0">
+               <font>
+                  <Font name="Comic Sans MS" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Circle fx:id="circular_image_container" centerX="512.0" centerY="280.0" fill="#1a1a1a00" radius="75.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="5.0" />
+   </children>
+</Pane>

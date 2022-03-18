@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<ScrollPane fx:id="opening_scrollpane" maxHeight="600.0" maxWidth="800.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1040.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="shasroyi_app.Shasroyi_OpeningController">
+  <content>
+    <AnchorPane fx:id="opening_pane" minHeight="0.0" minWidth="0.0" prefHeight="720.0" prefWidth="2000.0" style="-fx-background-color: #ffffff;" />
+  </content>
+</ScrollPane>

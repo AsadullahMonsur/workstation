@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+    margin: 0;
+    padding: 0;
+}
+#motion-demo {
+    margin-left: 200px;
+    margin-top: 100px;
+  offset-path: path('M150 0 L75 200 L225 200');
+  animation: move 3000ms infinite alternate ease-in-out;
+  width: 40px;
+  height: 40px;
+  background: cyan;
+}
+
+@keyframes move {
+  0% {
+    offset-distance: 0%;
+  }
+  100% {
+    offset-distance: 100%;
+  }
+}
+
+#viewer{
+    min-height: 100vh;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    background-image: url('dark_forest_02.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+}
+
+#content{
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    max-width: 350px;
+    max-height: 100px;
+    min-width: 350px;
+    min-height: 100px;
+    background: transparent;
+}
+
+#butt{
+    position: absolute;
+    display: flex;
+    max-width: 350px;
+    max-height: 100px;
+    min-width: 350px;
+    min-height: 100px;
+    border-radius: 5px;
+    border: none;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+    color: whitesmoke;
+
+    background: rgba(0, 0, 0, 0.452);
+
+}
+
+#butt:hover{
+    /* filter: drop-shadow(3px 5px 8px #666);  */  
+    border: 3px solid rgba(151, 149, 149, 0.66) ;
+}
+
+/*  
+    background: linear-gradient(
+      to right, hsla(240, 87%, 3%, 0.664) 100%, rgba(151, 149, 149, 0.66) 0%); */
+
+#butt:hover>#layer{
+  transition: .75s ease-out;
+  min-width: 0px;
+  max-width: 0px;
+      
+}
+
+#layer{
+ position: absolute;
+ min-width: 250px;
+ max-width: 250px;
+ min-height: 100%;
+ text-align: center;
+ background: rgba(151, 149, 149, 0.66);
+ transition: .75s ease-out;
+}
+
+#fly1{
+ position: absolute;
+ min-width: 32px;
+ max-width: 32px;
+ min-height: 8px;
+ background: rgb(43, 207, 10);
+ transition: 2s ease-out;
+ offset-path: path('M160 0 L350 0 L350 100 L0 100 L0 0 L160 0 Z');
+ filter: blur(2px);
+ box-shadow: 0px 0px 2px rgb(43, 207, 10);
+ animation: move 3.5s infinite ease-out;
+}
+
+#fly2{
+ position: absolute;
+ min-width: 32px;
+ max-width: 32px;
+ min-height:8px;
+ border-radius: 50%;
+ background: rgb(16, 108, 228);
+ box-shadow: 0px 0px 2px rgb(16, 108, 228);
+ filter: blur(2px);
+ transition: 2s ease-out;
+ offset-path: path('M160 0 L0 0 L0 100 L350 100 L350 0 L160 0 Z');
+ animation: move 3.5s infinite ease-out;
+}
+
+</style>
+</head>
+<body>
+    <div id="viewer">
+
+      <div id="content">
+      
+        <button id="butt">
+           Begin
+           <div id="layer">
+
+           </div>
+       </button>
+       <div id="fly1">
+
+       </div>
+       <div id="fly2">
+
+      </div>
+    </div>
+
+
+    </div>
+</body>
+</html>
+
+

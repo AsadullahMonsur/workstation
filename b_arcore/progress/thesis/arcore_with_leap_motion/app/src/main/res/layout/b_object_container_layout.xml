@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+  <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+ <RelativeLayout
+     android:id="@+id/b_object_upper_content"
+     android:layout_width="match_parent"
+     android:layout_height="400dp"
+     android:layout_marginBottom="20dp">
+
+     <fragment
+         android:id="@+id/b_object_fragment"
+         android:name="com.example.arcore_with_leap_motion.cloud_connection.Custom_AR_Fragment"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         />
+
+ </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/b_object_lower_content"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/b_object_upper_content">
+
+        <RelativeLayout
+            android:id="@+id/b_object_lower_content_01"
+            android:layout_width = "match_parent"
+            android:layout_height = "60dp"
+            android:gravity="center_horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/b_object_rotate_x_btn"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/rotate_in_x_direction"
+                android:textAppearance="@style/Widget.MaterialComponents.Button"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/green"
+                android:textSize="17sp"
+                android:backgroundTint="@color/blue"
+                app:cornerRadius="45dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/b_object_lower_content_02"
+            android:layout_width = "match_parent"
+            android:layout_height = "60dp"
+            android:layout_below="@+id/b_object_lower_content_01"
+            android:gravity="center_horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/b_object_rotate_y_btn"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/rotate_in_y_direction"
+                android:textAppearance="@style/Widget.MaterialComponents.Button"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/green"
+                android:textSize="17sp"
+                android:backgroundTint="@color/blue"
+                app:cornerRadius="45dp"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/b_object_lower_content_03"
+            android:layout_width = "match_parent"
+            android:layout_height = "60dp"
+            android:layout_below="@+id/b_object_lower_content_02"
+            android:gravity="center_horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/b_object_cloud_anchor_btn"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textAppearance="@style/Widget.MaterialComponents.Button"
+                android:text="@string/cloud_anchor_resolve"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/green"
+                android:textSize="17sp"
+                android:backgroundTint="@color/blue"
+                app:cornerRadius="45dp"
+                />
+        </RelativeLayout>
+
+   </RelativeLayout>
+ </RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

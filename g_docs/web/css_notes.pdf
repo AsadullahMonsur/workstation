@@ -1,0 +1,9 @@
+/*
+
+display : none  --it removes the content from page
+visibility : hidden  --only hides but stays on the page spcace
+
+align-items: center  --vertically
+justify-content: center  --horizontally
+
+*/

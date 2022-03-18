@@ -1,0 +1,45 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.0.10'
+}
+
+group 'org'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    flatDir {
+        dirs 'src/main/libs'
+        //dirs 'lib1', 'lib2'
+    }
+}
+
+sourceCompatibility = '11'
+targetCompatibility = '11'
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
+application {
+    mainModule = 'com.game_3d'
+    mainClass = 'com.game_3d.Main'
+}
+
+javafx {
+    version = '11.0.2'
+    modules = ['javafx.base','javafx.controls', 'javafx.fxml',
+               'javafx.graphics','javafx.media','javafx.swing',
+               'javafx.web']
+}
+
+dependencies {
+    implementation files('src/main/libs/jimObjModelImporterJFX.jar')
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+}
+
+test {
+    useJUnitPlatform()
+}

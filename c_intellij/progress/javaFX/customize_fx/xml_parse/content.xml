@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<panels>
+	<panel id="1">
+		<label>In the Name of Allah</label>
+		<textfield>Type Here</textfield>
+		<button>Go to website</button>
+		<link>1</link>
+		<id>0</id>
+	</panel>
+</panels>

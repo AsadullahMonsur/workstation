@@ -1,0 +1,20 @@
+.button{
+     -fx-padding: 15 15 15 15;
+    -fx-background-radius: 20;
+    -fx-background-color: black;
+    -fx-font-weight: bold;
+    -fx-font-size: 1.1em;
+	-fx-text-fill:#17eb17;
+	-fx-transition: width 2s, height 2s, transform 2s;
+	-fx-highlight-fill: black;
+	-fx-border-radius: 15;
+	-fx-border-width: 3;
+        -fx-border-color: linear-gradient(to bottom, #000099, #e806bd);
+	/*-fx-border-color: linear-gradient(#000099, #e806bd); up-down*/
+      /* -fx-border-color: linear-gradient(from 0px 0px to 100px 100px,
+                           #e806bd, #000099);*/
+}
+
+.button:hover {
+ 
+}

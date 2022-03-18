@@ -1,0 +1,19 @@
+.button{
+     -fx-padding: 15 15 15 15;
+    -fx-background-radius: 30;
+    -fx-background-color: black;
+    -fx-font-weight: bold;
+    -fx-font-size: 1.1em;
+	-fx-text-fill:#17eb17;
+	-fx-transition: width 2s, height 2s, transform 2s;
+	-fx-highlight-fill: black;
+	-fx-border-radius: 15;
+	-fx-border-width: 5;
+	-fx-border-color: #17eb17;
+
+}
+
+.button:hover {
+  -fx-effect: dropshadow( gaussian , rgba(0.09,0.09,0.9,1) , 180,160,85,1 );
+
+}

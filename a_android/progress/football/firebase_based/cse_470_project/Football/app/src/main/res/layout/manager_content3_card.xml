@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:background="@color/White">
+
+    <EditText
+        android:id="@+id/manager_cont3_player_points"
+        android:text=""
+        android:hint="set player points"
+        android:textSize="18sp"
+        android:inputType="number"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:background="@color/Green3"
+        android:layout_height="60dp"
+        android:layout_width="match_parent"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        />
+
+    <EditText
+        android:id="@+id/manager_cont3_player_id"
+        android:text=""
+        android:inputType=""
+        android:textAlignment="center"
+        android:hint="enter player id"
+        android:textSize="18sp"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:background="@color/Green3"
+        android:layout_height="60dp"
+        android:layout_width="match_parent"
+        android:layout_marginTop="220dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        />
+
+
+    <Button
+        android:id="@+id/manager_cont3_btn"
+        android:text="Enter"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        android:background="@color/Blue3"
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:layout_marginTop="350dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginLeft="60dp"
+        />
+
+</RelativeLayout>

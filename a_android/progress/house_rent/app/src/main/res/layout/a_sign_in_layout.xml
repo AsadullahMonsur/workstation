@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".user_authentication.Sign_In_Page"
+    >
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="30dp"
+    android:gravity="center">
+
+
+    <TextView
+        android:layout_width            = "wrap_content"
+        android:layout_height           = "wrap_content"
+        android:layout_marginTop        = "15dp"
+        android:layout_centerHorizontal = "true"
+        android:text                    = "@string/log_in_info"
+        android:fontFamily              = "sans-serif-black"
+        android:textSize                = "30sp"
+        android:textColor               = "@color/TextColor2"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+    android:id                      = "@+id/a_user_mail_sign_in_input_layout"
+    android:layout_width            = "match_parent"
+    android:layout_height           = "wrap_content"
+    android:layout_marginTop        = "80dp"
+    android:layout_centerHorizontal = "true"
+
+    android:hint                    = "@string/enter_user_mail_address"
+    android:textColorHint           = "@color/colorPrimaryDark"
+
+    app:counterEnabled              = "true"
+    app:counterMaxLength            = "50"
+    app:helperTextEnabled           = "true"
+    app:boxStrokeColor              = "@color/TextColor2"
+
+
+    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id            = "@+id/a_user_mail_sign_in_input_edit_txt"
+        android:layout_width  = "match_parent"
+        android:layout_height = "match_parent"
+        android:maxLength     = "50"
+        android:inputType     = "textEmailAddress"
+        />
+
+</com.google.android.material.textfield.TextInputLayout>
+
+
+<com.google.android.material.textfield.TextInputLayout
+    android:id                      = "@+id/a_user_sign_in_password_input_layout"
+
+    android:layout_width            = "match_parent"
+    android:layout_height           = "wrap_content"
+    android:layout_marginTop        = "180dp"
+    android:layout_centerHorizontal = "true"
+
+    android:textColorHint           = "@color/colorPrimaryDark"
+
+    app:boxStrokeColor              = "@color/TextColor2"
+    app:counterEnabled              = "true"
+    app:counterMaxLength            = "15"
+    app:helperTextEnabled           = "true"
+    app:passwordToggleEnabled       = "true"
+
+    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id            = "@+id/a_user_sign_in_password_input_edit_txt"
+        android:layout_width  = "match_parent"
+        android:layout_height = "match_parent"
+        android:hint          = "@string/enter_password"
+        android:maxLength     = "15"
+        android:inputType     = "textPassword"
+        />
+
+</com.google.android.material.textfield.TextInputLayout>
+
+<TextView
+    android:id                      = "@+id/forgotPass"
+    android:layout_width            = "wrap_content"
+    android:layout_height           = "wrap_content"
+    android:layout_marginTop        = "270dp"
+    android:layout_marginStart      = "5dp"
+
+    android:text                    = "@string/forgot_password"
+    android:textSize                = "24sp"
+    android:textColor               = "@color/Red"
+    android:inputType               = "none"
+    android:onClick                 = "Password_Forgot" />
+
+    <Button
+        android:id                      = "@+id/sign_in_button"
+        android:layout_width            = "200dp"
+        android:layout_height           = "30dp"
+        android:layout_marginTop        = "320dp"
+        android:layout_centerHorizontal = "true"
+
+        android:text                    = "@string/log_in"
+        android:textSize                = "20sp"
+        android:textAllCaps             = "false"
+
+        android:textColor               = "@color/TextColor2"
+        android:background              = "@color/ButtonColor"
+        android:onClick                 = "Log_In_Button"
+        />
+
+    <TextView
+        android:layout_width            = "wrap_content"
+        android:layout_height           = "wrap_content"
+        android:layout_marginTop        = "355dp"
+
+        android:text                    = "@string/choice"
+        android:textSize                = "24sp"
+        android:textColor               = "@color/Pink1"
+        android:inputType               = "none"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:id                      = "@+id/sign_up_redirect"
+        android:layout_width            = "200dp"
+        android:layout_height           = "30dp"
+        android:layout_marginTop        = "400dp"
+        android:layout_centerHorizontal = "true"
+
+        android:text                    = "@string/move_to_sign_up"
+        android:textSize                = "20sp"
+        android:textAllCaps             = "false"
+
+        android:textColor               = "@color/TextColor2"
+        android:background              = "@color/ButtonColor"
+        android:onClick                 = "Shift_To_Sign_Up"
+        />
+
+</RelativeLayout>
+</ScrollView>

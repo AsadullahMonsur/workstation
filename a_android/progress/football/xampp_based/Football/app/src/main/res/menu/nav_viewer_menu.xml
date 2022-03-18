@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+
+        <item
+            android:id="@+id/viewer_profile"
+            android:title="@string/my_info"
+            android:icon="@drawable/ic_person_black_24dp"
+            />
+
+        <item
+            android:id="@+id/viewer_show_team"
+            android:title="@string/team_squad_info"
+            android:icon="@drawable/ic_view_list_black_24dp"
+            />
+        <item
+            android:id="@+id/viewer_match_history"
+            android:title="@string/team_match_history"
+            android:icon="@drawable/ic_history_black_24dp"
+            />
+        <item
+            android:id="@+id/viewer_log_out"
+            android:title="@string/log_out"
+            android:icon="@drawable/ic_eject_black_24dp"
+            />
+    </group>
+
+</menu>

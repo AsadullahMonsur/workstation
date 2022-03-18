@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <Button
+        android:id="@+id/left_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="@string/rotation_y_axis"
+        android:textAllCaps="false">
+    </Button>
+
+    <Button
+        android:id="@+id/right_btn"
+        android:layout_toRightOf="@+id/left_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="@string/rotation_x_axis"
+        android:textAllCaps="false">
+    </Button>
+
+</RelativeLayout>

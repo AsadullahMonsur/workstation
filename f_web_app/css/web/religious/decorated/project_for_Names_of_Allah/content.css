@@ -1,0 +1,275 @@
+body{
+    margin:0;
+    padding: 0;
+    min-height: 100vh;
+    display:flex;
+    flex:1;
+    align-items:center;
+    justify-content:center;
+    flex-direction:row;
+    --bgcb: rgba(9, 10, 14, 0.78);
+    --bgcw: rgba(255, 255, 255, 0.28);
+    --bgcring:rgba(0, 0, 0, 0.9);
+    background-image: url('dark_forest_02.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    --bodsize1: 3px;
+    --bodsize2: 6px;
+    --wide: 500px;
+    --lf-width:100vh;
+    --lf-height:100vh;
+    --tcolor: rgb(255, 255, 255);
+    overflow: hidden;
+}
+
+.viewer{
+    min-height: 500px;
+    min-width: 500px;
+    max-height: 500px;
+    max-width: 500px;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    overflow:hidden;
+    transform: rotate(45deg);
+    z-index: 2;
+}
+
+.quadrilateral{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+#left_top{
+    border-radius: 100% 0 0 0;
+    background:var(--bgcw);
+    align-items:center;
+    justify-content:center;
+    border-bottom: var(--bodsize1) solid var(--bgcb);
+    border-right: var(--bodsize1) solid var(--bgcb);
+    border-top: var(--bodsize2) solid var(--bgcb);
+    border-left: var(--bodsize2) solid var(--bgcb);
+}
+
+#left_top:hover{
+    background: var(--bgcb);
+    color: var(--bgcw);
+    border-top: var(--bodsize2) solid var(--bgcw);
+    border-left: var(--bodsize2) solid var(--bgcw);
+    color: var(--tcolor);
+}
+
+#left_bottom{
+    border-radius: 0 0 0 100%;
+    background:var(--bgcw);
+    align-items:center;
+    justify-content:center;
+    border-bottom: var(--bodsize2) solid var(--bgcb);
+    border-right: var(--bodsize1) solid var(--bgcb);
+    border-top: var(--bodsize1) solid var(--bgcb);
+    border-left: var(--bodsize2) solid var(--bgcb);
+}
+
+#left_bottom:hover{
+    background: var(--bgcb);
+    color: var(--bgcw);
+    border-bottom: var(--bodsize2) solid var(--bgcw);
+    border-left: var(--bodsize2) solid var(--bgcw);
+    color: var(--tcolor);
+}
+
+#right_top{
+    border-radius: 0 100% 0 0;
+    background:var(--bgcw);
+    align-items:center;
+    justify-content:center;
+    border-bottom: var(--bodsize1) solid var(--bgcb);
+    border-right: var(--bodsize2) solid var(--bgcb);
+    border-top: var(--bodsize2) solid var(--bgcb);
+    border-left: var(--bodsize1) solid var(--bgcb);
+}
+#right_top:hover{
+    background: var(--bgcb);
+    color: var(--bgcw);
+    border-top: var(--bodsize2) solid var(--bgcw);
+    border-right: var(--bodsize2) solid var(--bgcw);
+    color: var(--tcolor);
+}
+
+#right_bottom{
+    border-radius: 0 0 100% 0;
+    background:var(--bgcw);
+    align-items:center;
+    justify-content:center;
+    border-bottom: var(--bodsize2) solid var(--bgcb);
+    border-right: var(--bodsize2) solid var(--bgcb);
+    border-top: var(--bodsize1) solid var(--bgcb);
+    border-left: var(--bodsize1) solid var(--bgcb);
+}
+
+#right_bottom:hover{
+    background: var(--bgcb);
+    color: var(--bgcw);
+    border-bottom: var(--bodsize2) solid var(--bgcw);
+    border-right: var(--bodsize2) solid var(--bgcw);
+    color: var(--tcolor);
+}
+
+#core_ring{
+position: fixed;  
+margin-left:25%;
+margin-top:25%;  
+min-height: 250px;
+min-width: 250px;
+max-width: 250px;
+max-height: 250px;
+display: flex;
+flex: 1;
+flex-direction: column;
+background: var(--bgcring);
+border-radius:50%;
+align-items:center;
+justify-content:center;
+}
+
+#core_ring p{
+    color: #fff;
+}
+
+#core_ring p:hover{
+    color: rgb(18, 218, 0);
+}
+
+.viewer p{
+    transform: rotate(-45deg);
+    text-align:center;
+}
+
+#wave_holder{
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+    background: transparent;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+}
+.wave{
+    position: absolute;
+    min-width: 20px;
+    min-height: 20px;
+    max-width: 20px;
+    max-height: 20px;
+    flex: 1;
+    background: transparent;
+    border-radius:50%;
+    border: 5px solid rgba(27, 26, 26, 0.4);
+}
+
+#wave1{
+    animation: waver1 2s ease-out infinite;
+}
+#wave2{
+    animation: waver2 4s ease-out infinite;
+}
+
+@keyframes waver1{
+    50%{
+      min-width: var(--wide);
+      min-height: var(--wide);
+      max-width: var(--wide);
+      max-height: var(--wide);
+    }
+    60%{
+        box-shadow: none;   
+    }
+    100%{
+        border:none;
+        box-shadow: none;
+    } 
+}
+  
+@keyframes waver2{  
+    50%{
+      min-width: var(--wide);
+      min-height: var(--wide);
+      max-width: var(--wide);
+      max-height: var(--wide);
+    }
+    60%{
+        box-shadow: none;   
+    }
+    100%{
+        border:none;
+        box-shadow: none;
+    } 
+}
+
+#leaf_holder{
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+    background: transparent;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    z-index: -1;
+}
+
+.leaf{
+    position: relative;
+    height: 48px;
+    width: 48px;
+    border: none;
+    border-style: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.leaf:nth-child(n){
+    transform: translate(300px, -100px) rotate(360deg);
+    animation: fall1 7s ease-out infinite;
+}
+
+.leaf:nth-child(2n+1){
+    transform: translate(200px, -100px) rotateX(360deg);
+    animation: fall2 13s ease-out infinite; 
+}
+
+.leaf:nth-child(3n+2){
+    transform: translate(150px, -100px) rotateY(360deg);
+    animation: fall3 7.5s ease-out infinite; 
+}
+.leaf:nth-child(4n){
+    transform: translate(500px, -100px) rotateZ(360deg);
+    animation: fall4 10s ease-out infinite; 
+}
+
+@keyframes fall1{
+    100%{
+        transform: translate( 600px, var(--lf-height) ) rotate(-360deg);
+    }
+}
+@keyframes fall2{
+    100%{
+        transform: translate( 500px, var(--lf-height) ) rotateX(-360deg);
+    }
+}
+
+@keyframes fall3{
+    100%{
+        transform: translate( 150px, var(--lf-height) ) rotateY(-360deg);
+    }
+}
+
+@keyframes fall4{
+    100%{
+        transform: translate( 550px, var(--lf-height) ) rotateZ(-360deg);
+    }
+}

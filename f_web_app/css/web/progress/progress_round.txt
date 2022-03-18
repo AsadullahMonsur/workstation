@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+background:yellow;
+}
+#grad1 {
+  position:absolute;
+  height: 100px;
+  width: 100px;
+  border-radius:50%;
+background-image: conic-gradient(white 45deg,black 0deg);
+
+align-items:center;
+justify-content:center;
+animation: do 1s infinite; 
+}
+
+
+@keyframes do{
+   12%{
+background-image: conic-gradient(white 90deg,black 0deg);
+   }
+   24%{
+background-image: conic-gradient(white 135deg,black 0deg);   
+}
+   36%{
+background-image: conic-gradient(white 180deg,black 0deg);
+   }
+   48%{
+background-image: conic-gradient(white 225deg,black 0deg);
+   }
+   
+   60%{
+background-image: conic-gradient(white 270deg,black 0deg);
+   }
+   
+  72%{
+background-image: conic-gradient(white 315deg,black 0deg);
+   }
+  84%{
+background-image: conic-gradient(white 360deg,black 0deg);
+   }
+      100%{
+background-image: conic-gradient(white 45deg,black 0deg);
+   }
+}
+</style>
+</head>
+<body>
+
+<div id="grad1">
+   <div >
+   </div>
+</div>
+
+</body>
+</html>
+
+
+2nd type
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+background:yellow;
+}
+#grad1 {
+  position:absolute;
+  height: 400px;
+  width: 400px;
+  border-radius:50%;
+background-image: conic-gradient(black 120deg,white 120deg,white 240deg, black 240deg);
+align-items:center;
+justify-content:center;
+animation: do 1s infinite;
+}
+
+
+#inside{
+  height: 400px;
+  width: 80%;
+  margin-left:10%;
+  background: black;
+  
+}
+
+@keyframes do{
+   30%{
+background-image: conic-gradient(white 120deg,black 120deg,black 240deg, black 240deg);
+   }
+   60%{
+background-image: conic-gradient(black 120deg,black 120deg,black 240deg, white 240deg);
+      
+}
+</style>
+</head>
+<body>
+
+<div id="grad1">
+   <div >
+   </div>
+</div>
+
+</body>
+</html>
+

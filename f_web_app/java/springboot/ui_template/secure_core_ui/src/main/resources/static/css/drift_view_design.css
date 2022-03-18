@@ -1,0 +1,182 @@
+html,body {
+    margin: 0;
+    padding: 0;
+}
+
+/*auto indent clt+shit+i*/
+/*this is the root holder*/
+
+.view_layout {
+  display: flex;
+  min-height: 100vh;
+  background-color: black;
+}
+
+.view_layout div:nth-of-type(even){
+    min-height: 600px;
+    min-width: 512px;
+    visibility: inherit;
+    display: inherit;
+    flex-grow: 1;
+    background-color: rgb(24, 21, 21);
+}
+
+.view_layout div:nth-of-type(odd){
+  min-height: 600px;
+  min-width: 256px;
+  visibility: inherit;
+  display: inherit;
+  flex-direction: inherit;
+  flex-grow: 1;
+  background-color: rgb(207, 193, 193);
+  justify-content: center;
+  align-items: center;
+}
+
+.view_layout div:nth-of-type(odd) nav {
+    min-height: 600px;
+    min-width: 256px;
+    height: 100%;
+    visibility: inherit;
+    display: inherit;
+    flex-direction: inherit;
+    flex-grow: 1;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+ 
+  }
+
+   
+  .view_layout div:nth-of-type(odd) nav ul {
+    height: 100%;
+    visibility: inherit;
+    display: inherit;
+    flex-direction: column;
+    flex-grow: 1;
+    order: 1;
+    background-color: rgb(175, 127, 80);
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+.view_layout div:nth-of-type(odd) nav ul:nth-child(n) li{
+  width: 256px;
+  visibility: inherit;
+  display: inherit;
+  flex-direction: inherit;
+  flex-grow: 1;
+  background-color: black;
+}
+
+.view_layout div:nth-of-type(odd) nav ul li:nth-child(1) button{
+  visibility: inherit;
+  display: inherit;
+  flex-direction: inherit;
+  flex-grow: 1; 
+  justify-content: center;
+  align-items: center;
+  background-color: blue;
+  border: none;
+  stroke: none;
+}
+
+.view_layout div:nth-of-type(odd) nav ul li:nth-child(2) button{
+  visibility: inherit;
+  flex-grow: 1; 
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(217, 255, 0);
+  border: none;
+  stroke: none;
+}
+
+.view_layout div:nth-of-type(odd) nav ul li:nth-child(3) button{
+  flex-grow: 1; 
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 0, 149);
+  border: none;
+  stroke: none;
+}
+
+.view_layout div:nth-of-type(odd) nav ul li:nth-child(4) button{
+  flex-grow: 1; 
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 0, 0);
+  border: none;
+  stroke: none;
+}
+
+.view_layout div:nth-of-type(odd) nav ul li:nth-child(5) button{
+  flex-grow: 1; 
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(9, 255, 0);
+  border: none;
+  stroke: none;
+}
+
+.view_layout div:nth-of-type(odd) nav ul li:nth-child(6) button{
+  flex-grow: 1; 
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 204, 255);
+  border: none;
+  stroke: none;
+}
+
+.view_layout div:nth-of-type(odd) nav ul li:nth-child(3) button:hover{
+  background-color: white;
+}
+
+.view_layout div:nth-of-type(even):hover ~ .view_layout div:nth-of-type(odd){
+  visibility: hidden;
+  background-color: khaki;
+}
+
+
+@media screen and (min-width: 512px) {
+    .view_layout div:nth-of-type(odd) ul {
+      width: auto;
+      margin-top: 0;
+    }
+  }
+
+  @media screen and (max-width: 1024px) { 
+    .view_layout div:nth-of-type(odd){
+      max-width: 256px;
+    }
+    .view_layout div:nth-of-type(odd) nav{
+      max-width: 256px;
+    }
+    .view_layout div:nth-of-type(odd) nav ul{
+      max-width: 256px;
+    }
+    .view_layout div:nth-of-type(odd) nav ul:nth-child(n) li{
+      max-width: 256px;
+    }
+    .view_layout div:nth-of-type(odd) nav ul li:nth-child(1) button{
+      font-size: 15px;
+    }
+  }
+
+  @media screen and (min-width: 1024px) { 
+    .view_layout div:nth-of-type(odd){
+      max-width: 283px;
+    }
+    .view_layout div:nth-of-type(odd) nav{
+      max-width: 283px;
+    }
+    .view_layout div:nth-of-type(odd) nav ul{
+      max-width: 283px;
+    }
+    .view_layout div:nth-of-type(odd) nav ul:nth-child(n) li{
+      width: 283px;
+    }
+    .view_layout div:nth-of-type(odd) nav ul li:nth-child(1) button{
+      font-size: 17px;
+    }
+  }

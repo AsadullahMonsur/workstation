@@ -1,0 +1,599 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/blue">
+    <RelativeLayout
+    android:id="@+id/manager_cont5_port_01"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    android:gravity="center_horizontal">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/manager_cont5_port_01_card"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="16dp"
+            app:cardUseCompatPadding="true"
+            android:backgroundTint="@color/colorPrimary">
+
+            <TextView
+                android:id="@+id/manager_cont5_port_01_card_tv1"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:text="@string/match_id"
+                android:textStyle="bold|italic"
+                android:textAlignment="center"
+                android:textSize="21sp"
+                android:textAllCaps="false"
+                android:textColor="@color/pink"/>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/manager_cont5_port_02"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/manager_cont5_port_01">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/manager_cont5_port_02_card"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="16dp"
+            app:cardUseCompatPadding="true"
+            android:backgroundTint="@color/colorPrimary">
+
+            <TextView
+                android:id="@+id/manager_cont5_port_02_card_tv1"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:text="@string/match_id"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textSize="21sp"
+                android:textAllCaps="false"
+                android:textColor="@color/TextColor2"/>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/manager_cont5_port_03"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/manager_cont5_port_02">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/manager_cont5_port_03_card"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="16dp"
+            app:cardUseCompatPadding="true"
+            android:backgroundTint="@color/colorPrimary">
+
+            <TextView
+                android:id="@+id/manager_cont5_port_03_card_tv1"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:text="@string/goals"
+                android:textStyle="bold|italic"
+                android:textAlignment="center"
+                android:textSize="21sp"
+                android:textAllCaps="false"
+                android:textColor="@color/TextColor"/>
+
+        </com.google.android.material.card.MaterialCardView>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/manager_cont5_port_04"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/manager_cont5_port_03">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/manager_cont5_port_04_card"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="16dp"
+            app:cardUseCompatPadding="true"
+            android:backgroundTint="@color/colorPrimary">
+
+            <TextView
+                android:id="@+id/manager_cont5_port_04_card_tv1"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:text="@string/list_of_player_who_scored"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textSize="21sp"
+                android:textAllCaps="false"
+                android:textColor="@color/Blue3"/>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/manager_cont5_port_05"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/manager_cont5_port_04">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/manager_cont5_port_05_card"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp"
+            app:cardUseCompatPadding="true"
+            android:backgroundTint="@color/colorPrimary">
+
+            <TextView
+                android:id="@+id/manager_cont5_port_05_card_tv1"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:text="@string/list_of_player_who_scored"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textSize="13sp"
+                android:textAllCaps="false"
+                android:textColor="@color/yellow"/>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/manager_cont5_port_06"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/manager_cont5_port_05">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/manager_cont5_port_06_card"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="16dp"
+            app:cardUseCompatPadding="true"
+            android:backgroundTint="@color/colorPrimary">
+
+            <TextView
+                android:id="@+id/manager_cont5_port_06_card_tv1"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:text="@string/goal_times"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textSize="21sp"
+                android:textAllCaps="false"
+                android:textColor="@color/Blue3"/>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/manager_cont5_port_07"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/manager_cont5_port_06">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/manager_cont5_port_07_card"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp"
+            app:cardUseCompatPadding="true"
+            android:backgroundTint="@color/colorPrimary">
+
+            <TextView
+                android:id="@+id/manager_cont5_port_07_card_tv1"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:text="@string/goal_times"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textSize="13sp"
+                android:textAllCaps="false"
+                android:textColor="@color/yellow"/>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/manager_cont5_port_08"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/manager_cont5_port_07">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/manager_cont5_port_08_card"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="16dp"
+            app:cardUseCompatPadding="true"
+            android:backgroundTint="@color/colorPrimary">
+
+            <TextView
+                android:id="@+id/manager_cont5_port_08_card_tv1"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:text="@string/injury"
+                android:textStyle="bold|italic"
+                android:textAlignment="center"
+                android:textSize="21sp"
+                android:textAllCaps="false"
+                android:textColor="@color/TextColor"/>
+
+        </com.google.android.material.card.MaterialCardView>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/manager_cont5_port_09"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/manager_cont5_port_08">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/manager_cont5_port_09_card"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="16dp"
+            app:cardUseCompatPadding="true"
+            android:backgroundTint="@color/colorPrimary">
+
+            <TextView
+                android:id="@+id/manager_cont5_port_09_card_tv1"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:text="@string/list_of_players_get_injured"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textSize="21sp"
+                android:textAllCaps="false"
+                android:textColor="@color/Blue3"/>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/manager_cont5_port_10"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/manager_cont5_port_09">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/manager_cont5_port_10_card"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp"
+            app:cardUseCompatPadding="true"
+            android:backgroundTint="@color/colorPrimary">
+
+            <TextView
+                android:id="@+id/manager_cont5_port_10_card_tv1"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:text="@string/list_of_players_get_injured"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textSize="13sp"
+                android:textAllCaps="false"
+                android:textColor="@color/yellow"/>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/manager_cont5_port_11"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/manager_cont5_port_10">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/manager_cont5_port_11_card"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="16dp"
+            app:cardUseCompatPadding="true"
+            android:backgroundTint="@color/colorPrimary">
+
+            <TextView
+                android:id="@+id/manager_cont5_port_11_card_tv1"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:text="@string/injury_times"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textSize="21sp"
+                android:textAllCaps="false"
+                android:textColor="@color/Blue3"/>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/manager_cont5_port_12"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/manager_cont5_port_11">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/manager_cont5_port_12_card"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp"
+            app:cardUseCompatPadding="true"
+            android:backgroundTint="@color/colorPrimary">
+
+            <TextView
+                android:id="@+id/manager_cont5_port_12_card_tv1"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:text="@string/injury_times"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textSize="13sp"
+                android:textAllCaps="false"
+                android:textColor="@color/yellow"/>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/manager_cont5_port_13"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/manager_cont5_port_12">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/manager_cont5_port_13_card"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="16dp"
+            app:cardUseCompatPadding="true"
+            android:backgroundTint="@color/colorPrimary">
+
+            <TextView
+                android:id="@+id/manager_cont5_port_13_card_tv1"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:text="@string/card"
+                android:textStyle="bold|italic"
+                android:textAlignment="center"
+                android:textSize="21sp"
+                android:textAllCaps="false"
+                android:textColor="@color/TextColor"/>
+
+        </com.google.android.material.card.MaterialCardView>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/manager_cont5_port_14"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/manager_cont5_port_13">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/manager_cont5_port_14_card"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="16dp"
+            app:cardUseCompatPadding="true"
+            android:backgroundTint="@color/colorPrimary">
+
+            <TextView
+                android:id="@+id/manager_cont5_port_14_card_tv1"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:text="@string/list_of_players_who_get_card"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textSize="21sp"
+                android:textAllCaps="false"
+                android:textColor="@color/Blue3"/>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/manager_cont5_port_15"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/manager_cont5_port_14">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/manager_cont5_port_15_card"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp"
+            app:cardUseCompatPadding="true"
+            android:backgroundTint="@color/colorPrimary">
+
+            <TextView
+                android:id="@+id/manager_cont5_port_15_card_tv1"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:text="@string/list_of_players_who_get_card"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textSize="13sp"
+                android:textAllCaps="false"
+                android:textColor="@color/yellow"/>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/manager_cont5_port_16"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/manager_cont5_port_15">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/manager_cont5_port_16_card"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="16dp"
+            app:cardUseCompatPadding="true"
+            android:backgroundTint="@color/colorPrimary">
+
+            <TextView
+                android:id="@+id/manager_cont5_port_16_card_tv1"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:text="@string/card_times"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textSize="21sp"
+                android:textAllCaps="false"
+                android:textColor="@color/Blue3"/>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/manager_cont5_port_17"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/manager_cont5_port_16">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/manager_cont5_port_17_card"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp"
+            app:cardUseCompatPadding="true"
+            android:backgroundTint="@color/colorPrimary">
+
+            <TextView
+                android:id="@+id/manager_cont5_port_17_card_tv1"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:text="@string/card_times"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textSize="13sp"
+                android:textAllCaps="false"
+                android:textColor="@color/yellow"/>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/manager_cont5_port_18"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/manager_cont5_port_17">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/manager_cont5_port_18_card"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="16dp"
+            app:cardUseCompatPadding="true"
+            android:backgroundTint="@color/colorPrimary">
+
+            <TextView
+                android:id="@+id/manager_cont5_port_18_card_tv1"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:text="@string/card_types"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textSize="21sp"
+                android:textAllCaps="false"
+                android:textColor="@color/Blue3"/>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/manager_cont5_port_19"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/manager_cont5_port_18">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/manager_cont5_port_19_card"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp"
+            app:cardUseCompatPadding="true"
+            android:backgroundTint="@color/colorPrimary">
+
+            <TextView
+                android:id="@+id/manager_cont5_port_19_card_tv1"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:text="@string/card_types"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textSize="13sp"
+                android:textAllCaps="false"
+                android:textColor="@color/yellow"/>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </RelativeLayout>
+</RelativeLayout>

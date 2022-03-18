@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+    margin: 0;
+    padding: 0;
+}
+#motion-demo {
+    margin-left: 200px;
+    margin-top: 100px;
+  offset-path: path('M150 0 L75 200 L225 200');
+  animation: move 3000ms infinite alternate ease-in-out;
+  width: 40px;
+  height: 40px;
+  background: cyan;
+}
+
+@keyframes move {
+  0% {
+    offset-distance: 0%;
+  }
+  100% {
+    offset-distance: 100%;
+  }
+}
+
+#viewer{
+    min-height: 100vh;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    background-image: url('nl.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+}
+
+#card{
+    position: absolute;
+    display: flex;
+    max-width: 250px;
+    max-height: 400px;
+    min-width: 250px;
+    min-height: 400px;
+    border-radius: 5px;
+    flex: 1;
+    box-shadow:        /* outer left magenta */
+            5px -5px 10px rgba(19, 230, 12, 0.66),
+           -6px  6px 10px hsla(226, 95%, 37%, 0.678);
+    background: linear-gradient(to top right,hsla(226, 87%, 20%, 0.678) 35%,rgba(19, 230, 12, 0.66)) 35%;          
+}
+
+#card:hover{
+    z-index: 2;  
+    filter: drop-shadow(3px 10px 8px #666);      
+}
+#content{
+    align-items: center;
+    flex: 1;
+    margin: 5px;
+    display: flex;
+    background: rgba(0, 0, 0, 0.452);
+    border-radius: 5px;
+}
+
+#content:hover>#layer{
+  transition: 1s ease-out;
+  min-width: 1px;
+  max-width: 1px;
+}
+#content p{
+  margin: 5px;
+  color: rgb(5, 1, 27);
+}
+#content:hover> p{
+  color: white;
+margin: 5px;
+
+}
+
+#layer{
+ position: absolute;
+ min-width: 225px;
+ max-width: 225px;
+ min-height: 100%;
+ text-align: center;
+ background: rgba(243, 243, 243, 0.123);
+ transition: 1s ease-out;
+}
+
+</style>
+</head>
+<body>
+    <div id="viewer">
+       <div id="card">
+           <div id="content">
+             <p>
+               in the Name of Allah
+
+               ‘None has the right to be worshipped except Allah and Allah is the greatest.
+               None has the right to be worshipped except Allah, alone.None has the right to be worshipped
+               except Allah, alone, without partner.None has the right to be worshipped except Allah,
+               to Him belongs all sovereignty and praise.’
+             </p>
+             <div id="layer">
+
+             </div>
+           </div>
+       </div>
+    </div>
+</body>
+</html>
+
+

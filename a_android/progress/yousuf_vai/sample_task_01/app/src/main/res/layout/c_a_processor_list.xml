@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:id="@+id/c_a_processor_list_port_01"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/blue">
+        <Button
+            android:id="@+id/c_a_processor_list_port_01_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/blue"
+            android:text="@string/let_s_get_the_structure"
+            android:textSize="21sp"
+            android:textStyle="italic"
+            android:textAllCaps="false"
+            android:textAlignment="center"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/c_a_processor_list_port_02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/c_a_processor_list_port_01"
+        android:gravity="center">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/c_a_processor_list_recycle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_centerHorizontal="true">
+
+    </androidx.recyclerview.widget.RecyclerView>
+    </RelativeLayout>
+</RelativeLayout>

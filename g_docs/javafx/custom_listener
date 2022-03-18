@@ -1,0 +1,33 @@
+public interface MyListener extends EventListener{
+    void onEvent();
+}
+
+
+public class MyListenerImpl implements MyListener{
+    private String msg;
+    public MyListenerImpl(String data){
+        this.data=data;
+    }
+    
+    @Override
+    public void onEvent(){
+        System.out.println(msg);
+    }
+}
+
+
+private Collection<MyListener> listeners=new HashSet<>();
+public void register(MyListener listener){
+    listeners.add(listener);
+}
+public void eventHappens(){
+    for(MyListener listener:listeners){
+        listener.onEvent();
+    }
+}
+
+
+register(new MyListenerImpl("listener 1 called"));
+register(new MyListenerImpl("listener 2 called"));
+System.out.println("calling event");
+eventHappens();

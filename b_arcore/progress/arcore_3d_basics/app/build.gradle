@@ -1,0 +1,117 @@
+plugins {
+    id 'com.android.application'
+    id 'com.google.ar.sceneform.plugin'
+}
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.3"
+
+    defaultConfig {
+        applicationId "com.arcore_3d_basics"
+        minSdkVersion 28
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    sourceSets {
+        main {
+            res.srcDirs =
+                    [
+                            'src/main/res/layouts/launcher',
+                            'src/main/res/layouts/loader',
+                            'src/main/res/layouts/options',
+                            'src/main/res/layouts/rotation',
+                            'src/main/res/layouts/scale',
+                            'src/main/res/layouts/transform',
+                            'src/main/res/layouts',
+                            'src/main/res'
+                    ]
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.3.0'
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'com.google.android.material:material:1.4.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    implementation 'androidx.recyclerview:recyclerview:1.2.1'
+    // For control over item selection of both touch and mouse driven selection
+    implementation 'androidx.recyclerview:recyclerview-selection:1.1.0'
+
+    implementation 'com.google.ar:core:1.15.0'
+    implementation 'com.google.ar.sceneform:core:1.15.0'
+    implementation 'com.google.ar.sceneform:assets:1.15.0'
+    implementation 'com.google.ar.sceneform.ux:sceneform-ux:1.15.0'
+    implementation "com.google.ar.sceneform:animation:1.15.0"
+
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+}
+
+sceneform.asset('model3d/robots/M-FF_iOS_HERO_Tony_Stark_Iron_Man_Civil_War.obj',
+        'default',
+        'model3d/robots/M-FF_iOS_HERO_Tony_Stark_Iron_Man_Civil_War.sfa',
+        'src/main/assets/M-FF_iOS_HERO_Tony_Stark_Iron_Man_Civil_War')
+
+sceneform.asset('model3d/cars/Car.obj',
+        'default',
+        'model3d/cars/Car.sfa',
+        'src/main/assets/Car')
+
+sceneform.asset('model3D/floors/car_bed_black_white_wheel.obj',
+        'default',
+        'model3D/floors/car_bed_black_white_wheel.sfa',
+        'src/main/assets/car_bed_black_white_wheel')
+
+sceneform.asset('model3D/floors/car_bed_glass_white_wheel.obj',
+        'default',
+        'model3D/floors/car_bed_glass_white_wheel.sfa',
+        'src/main/assets/car_bed_glass_white_wheel')
+
+sceneform.asset('model3D/floors/car_bed_glass_white.obj',
+        'default',
+        'model3D/floors/car_bed_glass_white.sfa',
+        'src/main/assets/car_bed_glass_white')
+
+sceneform.asset('model3D/floors/car_bed_glass_green.obj',
+        'default',
+        'model3D/floors/car_bed_glass_green.sfa',
+        'src/main/assets/car_bed_glass_green')
+
+sceneform.asset('model3D/floors/car_bed_glass_blue.obj',
+        'default',
+        'model3D/floors/car_bed_glass_blue.sfa',
+        'src/main/assets/car_bed_glass_blue')
+
+sceneform.asset('model3D/floors/car_bed_glass_blue_sharp.obj',
+        'default',
+        'model3D/floors/car_bed_glass_blue_sharp.sfa',
+        'src/main/assets/car_bed_glass_blue_sharp')
+
+sceneform.asset('model3D/floors/car_bed_glass_blue_deulax.obj',
+        'default',
+        'model3D/floors/car_bed_glass_blue_deulax.sfa',
+        'src/main/assets/car_bed_glass_blue_deulax')

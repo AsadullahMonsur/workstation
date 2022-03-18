@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="navigation_view"
+    >
+
+    <group
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/b_user_home_main_btn"
+            android:title="@string/b_user_home"
+            android:icon="@drawable/b_home_15dp"
+            />
+
+        <item
+            android:id="@+id/c_user_profile_main_btn"
+            android:title="@string/c_user_profile"
+            android:icon="@drawable/c_user_profile_15dp"
+            />
+
+        <item
+            android:id="@+id/d_payment_main_btn"
+            android:title="@string/d_payment"
+            android:icon="@mipmap/d_payment_photo_2">
+        </item>
+
+        <item
+            android:id="@+id/e_messages_main_btn"
+            android:title="@string/e_messages"
+            android:icon="@mipmap/e_messages_photo">
+        </item>
+
+        <item
+            android:id="@+id/f_news_notify_main_btn"
+            android:title="@string/f_news_notify"
+            android:icon="@mipmap/f_notification_photo">
+
+        </item>
+
+        <item
+            android:id="@+id/g_my_apartment_main_btn"
+            android:title="@string/g_my_apartment"
+            android:icon="@mipmap/g_my_apartment_photo">
+
+        </item>
+
+        <item
+            android:id="@+id/h_my_rent_main_btn"
+            android:title="@string/h_my_rent"
+            android:icon="@mipmap/h_my_rent_photo">
+
+        </item>
+
+        <item
+            android:id="@+id/i_available_rent_main_btn"
+            android:title="@string/i_available_rent"
+            android:icon="@mipmap/i_available_rent_photo">
+
+        </item>
+
+        <item
+            android:id="@+id/j_user_log_out_btn"
+            android:title="@string/j_logout"
+            android:icon="@drawable/j_log_out_15dp"
+        />
+    </group>
+</menu>

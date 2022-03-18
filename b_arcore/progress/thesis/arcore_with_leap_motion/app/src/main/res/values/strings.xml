@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ARCore_with_Leap_Motion</string>
+    <string name="rotate_in_x_direction">Rotate in \'X\' Direction</string>
+    <string name="rotate_in_y_direction">Rotate in \'Y\' Direction</string>
+    <string name="cloud_anchor_resolve">Cloud Anchor Resolve</string>
+    <string name="rotation_y_axis">Rotation Y-axis</string>
+    <string name="rotation_x_axis">Rotation X-axis</string>
+    <string name="go_to_input">Go to Input</string>
+    <string name="go_to_arcore">Go to Arcore</string>
+</resources>

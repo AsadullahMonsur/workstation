@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "957690729486",
+    "firebase_url": "https://houserent-bf36c.firebaseio.com",
+    "project_id": "houserent-bf36c",
+    "storage_bucket": "houserent-bf36c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:957690729486:android:a5f83352075cc34586d85f",
+        "android_client_info": {
+          "package_name": "com.example.house_rent_and_payment"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "957690729486-smt9adbqbgp2s837df8r02p8qi5bcl9f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.house_rent_and_payment",
+            "certificate_hash": "a951a757685dd3a9da8047ac125bdbe4043babc7"
+          }
+        },
+        {
+          "client_id": "957690729486-58987u6aakpa3ig2jeiff9vqdv4irbvd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAaPhnn4gSb31V0A4UCPDdfL429M7bYkew"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "957690729486-58987u6aakpa3ig2jeiff9vqdv4irbvd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

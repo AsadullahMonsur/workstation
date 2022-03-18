@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Main-Class: com.orangeflower.launcher.Launcher
+Class-Path: E:\WorkStation\game\orangeflower\src\main\java\com\orangeflo
+ wer\launcher\Launcher.java
+

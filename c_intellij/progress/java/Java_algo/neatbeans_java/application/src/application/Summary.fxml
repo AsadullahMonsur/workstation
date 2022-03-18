@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="529.0" prefWidth="908.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SummaryController">
+   <children>
+      <Text layoutX="136.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Item Bought :" AnchorPane.topAnchor="135.0">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Text layoutX="136.0" layoutY="257.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Spend :" AnchorPane.bottomAnchor="260.0">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Text fx:id="item" layoutX="443.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-------" AnchorPane.topAnchor="135.0">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Text fx:id="amount" layoutX="432.0" layoutY="257.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-------" AnchorPane.bottomAnchor="260.0">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Button layoutX="394.0" layoutY="412.0" mnemonicParsing="false" onAction="#sload" prefHeight="45.0" prefWidth="121.0" text="Calculate">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

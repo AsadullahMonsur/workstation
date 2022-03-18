@@ -1,0 +1,12 @@
+https://stackoverflow.com/questions/50489112/java3d-load-obj-file-exported-from-blender
+
+https://jogamp.org/deployment/java3d/1.7.0-final/tutorial/j3d_tutorial_ch3.pdf
+
+
+http://forum.jogamp.org/how-to-load-a-obj-with-mtl-td4038099.html
+
+https://freecomputerbooks.com/Pro-Java-6-3D-Game-Development.html#downloadLinks
+
+
+3d rotation:
+https://gamedev.stackexchange.com/questions/136174/im-rotating-an-object-on-two-axes-so-why-does-it-keep-twisting-around-the-thir

@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">pattern_01</string>
+    <string name="move_to_processor_selection">Move to Processor Selection</string>
+    <string name="enter_amount_of_processors">Enter Amount of Processors</string>
+    <string name="reduce">reduce</string>
+    <string name="add">add</string>
+    <string name="_0">0</string>
+    <string name="organise">Organise Now</string>
+    <string name="no_elements_added">No Elements Added</string>
+    <string name="click_the_icon">Click the Icon</string>
+    <string name="let_s_get_the_structure">Let\'s Get the Structure</string>
+    <string name="processor_icon">processor icon</string>
+    <string name="enter_amount_of_star">Enter Amount of Star</string>
+    <string name="processor_info">processor_info</string>
+    <string name="item_info">item info</string>
+    <string name="component_name">Component\'s Name</string>
+</resources>

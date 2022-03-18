@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane fx:id="car_list_view_container" prefHeight="100.0" prefWidth="180.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.orangeflower.item_list.CarListView">
+   <children>
+      <ImageView fx:id="car_list_view_img_viewer" fitHeight="100.0" fitWidth="180.0" onMouseClicked="#car_list_view_img_clicked" onMouseEntered="#car_list_view_img_hover_entered" onMouseExited="#car_list_view_img_hover_exited" pickOnBounds="true" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="2.0" />
+   </children>
+</AnchorPane>

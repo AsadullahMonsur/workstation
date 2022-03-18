@@ -1,0 +1,13 @@
+https://www.java-tips.org/other-api-tips-100035/119-java3d.html
+
+
+http://web.cs.ucla.edu/classes/cs269/Java3DTutorial/j3d_tutorial_ch6.pdf
+
+https://infosys.ars.usda.gov/svn/code/third_party/JClassDesktopViews/6.3_src/docs/chart3d/jcchart3d-1i.html
+
+https://justjava3d.wordpress.com/java3d-code/
+
+
+shaadow
+
+http://www.java2s.com/Code/Java/3D/ShadowAppcreatesasingleplane.htm

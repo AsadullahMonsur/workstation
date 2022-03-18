@@ -1,0 +1,118 @@
+html,body {
+    margin: 0;
+    padding: 0;
+    background:pink;
+  }
+  /*auto indent clt+shit+i*/
+  /*this is the root holder*/
+  .view_layout {  
+    display: flex;
+    flex-direction: column;
+    background:#1bd5db;
+  }
+  
+  /* for padding all sides*/
+  /*.view_layout > * {
+    padding: 20px;
+  }
+  */
+  
+
+  .view_layout div:nth-child(n){  
+  visibility: inherit;
+  display: inherit;
+  flex-direction: inherit;
+  flex-grow: 1;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  }
+
+.view_layout div:nth-child(1){  
+    background-color:  blue;
+}
+.view_layout div:nth-child(2){  
+     background-color:  rgb(123, 255, 0);
+}
+.view_layout div:nth-child(3){  
+    background-color:  rgb(255, 0, 0);
+}
+  
+
+  #notification_id div:nth-child(1) p{
+    position: relative; 
+    min-height: 32px;
+    max-height: 32px;
+    min-width: 128px;
+    max-width: 128px;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    color: #010311;
+    font-family: cursive;
+    font-style: italic;
+    font-variant: normal;
+    font-weight: bold;
+    overflow-wrap: anywhere;
+    text-align: center;
+    animation: notification_title_theme_control 7s;
+  }
+  
+  @keyframes notification_title_theme_control {
+    10%{
+      color: #010311;
+    }
+    55%{
+      color: #010311;
+    }
+    75%{
+      color: #ffffff;
+    }
+    100%{
+      color: #ffffff;
+    }
+  }
+  
+  #notification_id div:nth-child(2){
+    position: relative;
+    min-height: fit-content;
+    max-height: fit-content;
+    min-width: 512px;
+    max-width: 512px;
+    flex-direction: inherit;
+    flex-grow: 1;
+    background: #010311;
+    animation: notification_body_theme_control 7s;
+  }
+  
+  @keyframes notification_body_theme_control {
+    10%{
+      background: #010311;
+    }
+    55%{
+      background: #010311;
+    }
+    75%{
+      background:#ffffff38;
+    }
+    100%{
+      background:#ffffff38;
+    }
+  }
+  
+  #notification_id div:nth-child(2) p{
+    position: relative; 
+    min-height: fit-content;
+    max-height: fit-content;
+    min-width: 512px;
+    flex-direction: row;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    color: rgba(255, 255, 255, 0.884);
+    overflow-wrap: anywhere;
+    text-align: center;
+  }
+  
+  

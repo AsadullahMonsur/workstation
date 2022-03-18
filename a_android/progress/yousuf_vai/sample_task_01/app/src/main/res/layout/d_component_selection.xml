@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbarSize="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue"
+        android:gravity="center">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/d_component_selection_card_01"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:backgroundTint="@color/black"
+            android:elevation="16dp">
+            <ImageView
+                android:id="@+id/d_component_selection_card_01_img_01"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:background="@color/white"
+                android:src="@drawable/star"
+                android:contentDescription="@string/processor_icon" />
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/d_component_selection_card_02"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/d_component_selection_card_01"
+            android:backgroundTint="@color/purple_200"
+            android:elevation="16dp">
+            <TextView
+                android:id="@+id/d_component_selection_card_02_tv_01"
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textAllCaps="false"
+                android:text="@string/enter_amount_of_star"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textSize="21sp"
+                />
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/d_component_selection_card_03"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/d_component_selection_card_02"
+            android:backgroundTint="@color/purple_500"
+            android:elevation="16dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <RelativeLayout
+                    android:id="@+id/d_component_selection_card_03_item_01"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@color/white">
+                    <ImageView
+                        android:id="@+id/d_component_selection_card_03_item_01_minus"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/minus"
+                        android:contentDescription="@string/reduce" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/d_component_selection_card_03_item_02"
+                    android:layout_width="180dp"
+                    android:layout_height="60dp"
+                    android:layout_toEndOf="@id/d_component_selection_card_03_item_01"
+                    android:background="@color/black">
+
+                    <EditText
+                        android:id="@+id/d_component_selection_card_03_item_02_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:hint="@string/_0"
+                        android:textColor="@color/white"
+                        android:textSize="35sp"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:textColorHint="@color/white"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/d_component_selection_card_03_item_03"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_toEndOf="@id/d_component_selection_card_03_item_02"
+                    android:background="@color/white">
+                    <ImageView
+                        android:id="@+id/d_component_selection_card_03_item_03_plus"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/plus"
+                        android:contentDescription="@string/add" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/d_component_selection_card_04"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/d_component_selection_card_03"
+            android:backgroundTint="@color/blue"
+            android:elevation="16dp">
+            <Button
+                android:id="@+id/d_component_selection_card_04_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/organise"
+                android:textAllCaps="false"
+                android:textStyle="italic"
+                android:textSize="21sp"
+                android:backgroundTint="@color/teal_700"/>
+        </com.google.android.material.card.MaterialCardView>
+
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "290502456667",
+    "firebase_url": "https://arcore-with-leap-motion.firebaseio.com",
+    "project_id": "arcore-with-leap-motion",
+    "storage_bucket": "arcore-with-leap-motion.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:290502456667:android:542039250240d573a1d67e",
+        "android_client_info": {
+          "package_name": "com.example.arcore_with_leap_motion"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "290502456667-2ate8opfnck0bpn1kg2aojhdaab36poo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.arcore_with_leap_motion",
+            "certificate_hash": "dcbe4ec968065e7c74a5f789ee030b5a2d243d5a"
+          }
+        },
+        {
+          "client_id": "290502456667-pa68j7feototmcftasl1u0jr2f95jb9p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBjskC9FEzDGsWddlY08-8YWXu1kakfSIY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "290502456667-pa68j7feototmcftasl1u0jr2f95jb9p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

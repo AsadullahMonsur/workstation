@@ -1,0 +1,3 @@
+https://www.hivemq.com/blog/mqtt-client-library-enyclopedia-paho-android-service/
+
+https://www.baeldung.com/java-mqtt-client

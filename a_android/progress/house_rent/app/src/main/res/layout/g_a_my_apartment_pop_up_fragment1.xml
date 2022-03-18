@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/White"
+    android:id="@+id/g_a_my_apartment_pop_up_frag1"
+    android:layout_gravity="center">
+
+    <RelativeLayout
+        android:id="@+id/g_a_my_apartment_pop_up_upper_layout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <TextView
+        android:id="@+id/g_a_my_apartment_pop_up_upper_layout_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@color/White"
+        android:text="@string/photo_upload"
+        android:textSize="31sp"
+        android:textAllCaps="false"
+        android:textAlignment="center"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/black"
+        />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/g_a_my_apartment_pop_up_form_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/White"
+        app:rippleColor="@color/Green4"
+        app:fabCustomSize="50dp"
+        app:maxImageSize="40dp"
+        android:src="@mipmap/cancel"
+        />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/g_a_my_apartment_pop_up_lower_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/g_a_my_apartment_pop_up_upper_layout">
+
+        <androidx.recyclerview.widget.RecyclerView
+             android:id="@+id/g_a_my_apartment_pop_up_frag1_recycle"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@color/White"
+        >
+    </androidx.recyclerview.widget.RecyclerView>
+    </RelativeLayout>
+</RelativeLayout>

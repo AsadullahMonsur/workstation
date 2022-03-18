@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body{
+    margin:0;
+    padding: 0;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+}
+.viewer{
+    min-width: 100px;
+    min-height: 100px;
+    max-width: 100px;
+    max-height:100px;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    overflow: hidden;
+    border: 5px solid black;
+    transform: rotateZ(45deg);
+}
+.quadlit{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+#q_left_top{
+background: white;
+border-right: 2.5px solid black;
+border-bottom: 2.5px solid black;
+}
+
+#q_left_bottom{
+background: white;
+border-right: 2.5px solid black;
+border-top: 2.5px solid black;
+}
+#q_right_top{
+background: white;
+border-left: 2.5px solid black;
+border-bottom: 2.5px solid black;
+}
+#q_right_bottom{
+background: white;
+border-left: 2.5px solid black;
+border-top: 2.5px solid black;
+}
+
+#roller{
+position: absolute;    
+min-height: 50px;
+min-width: 50px;
+max-width: 50px;
+max-height: 50px;
+background: black;    
+animation: roll 3.5s ease-out infinite;
+}
+
+.content_text_holder{
+ margin-left: 25px;   
+ min-height: 150px;
+ min-width: 400px;
+ max-width: 400px;
+ color: black;
+ background: white;
+ border: 5px solid black;
+ justify-content: center;
+ align-items: center;
+ align-content: center;
+ display: flex;
+ flex: 1;
+}
+.content_text_holder p{
+    flex: 1;
+    text-align: center;
+    align-content: center;
+}
+
+@keyframes roll{
+    25%{
+        transform: translate(100%,0%) rotateY(180deg);
+    }
+    50%{
+        transform: translate(100%,100%) rotateZ(180deg);
+    }
+    75%{
+        transform: translate(0%,100%) rotateX(180deg);
+    }
+    100%{
+        transform: translate(0%,0%) rotateY(360deg);
+    }
+}
+
+</style>
+</head>
+<body>
+
+<div class="viewer">
+    <div class="quadlit">
+        <div class="quadlit" id="q_left_top">
+
+        </div>
+        <div class="quadlit" id="q_left_bottom">
+
+        </div>
+    </div>
+    <div class="quadlit">
+        <div class="quadlit" id="q_right_top">
+
+        </div>
+        <div class="quadlit" id="q_right_bottom">
+
+        </div>
+    </div>
+
+    <div class="quadlit" id="roller">
+
+    </div>
+</div>
+<div class="content_text_holder">
+    <p>
+        Content Loading....
+    </p>
+</div>
+
+</body>
+</html>

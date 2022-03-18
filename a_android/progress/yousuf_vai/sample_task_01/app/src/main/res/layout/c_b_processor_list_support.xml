@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="20dp"
+        android:elevation="16dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp">
+        <RelativeLayout
+            android:id="@+id/c_b_processor_list_support_card_01_port_01"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+            <ImageView
+                android:id="@+id/c_b_processor_list_support_card_01_port_01_img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/processor"
+                android:contentDescription="@string/click_the_icon">
+            </ImageView>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/c_b_processor_list_support_card_01_port_02"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/c_b_processor_list_support_card_01_port_01">
+            <TextView
+                android:id="@+id/c_b_processor_list_support_card_01_port_02_tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/no_elements_added"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textSize="23sp">
+            </TextView>
+        </RelativeLayout>
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+</RelativeLayout>

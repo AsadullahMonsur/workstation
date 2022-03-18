@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+
+<AnchorPane prefHeight="620.0" prefWidth="1024.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.hospital.insertion.PersonController">
+   <children>
+      <VBox layoutX="272.0" layoutY="103.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" spacing="25.0" style="-fx-background-color: black;" AnchorPane.bottomAnchor="60.0" AnchorPane.leftAnchor="212.0" AnchorPane.rightAnchor="212.0" AnchorPane.topAnchor="60.0">
+         <children>
+            <TextField fx:id="name" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="45.0" prefWidth="600.0" promptText="Enter Name">
+               <VBox.margin>
+                  <Insets top="25.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="id" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="45.0" prefWidth="600.0" promptText="Enter ID" />
+            <TextField fx:id="age" layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="45.0" prefWidth="600.0" promptText="Age" />
+            <TextField fx:id="gender" layoutX="10.0" layoutY="34.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="45.0" prefWidth="600.0" promptText="Gender" />
+            <TextField fx:id="speciality" layoutX="10.0" layoutY="245.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="45.0" prefWidth="600.0" promptText="Speciality" />
+            <Button fx:id="submit_btn" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" prefHeight="35.0" prefWidth="600.0" text="Submit">
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="back_btn" layoutX="10.0" layoutY="106.0" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" prefHeight="35.0" prefWidth="600.0" text="Go Back">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

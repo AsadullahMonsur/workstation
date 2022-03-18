@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body{
+    min-height: 100vh;
+    margin:0;
+    padding: 0;
+    display:flex;
+    flex:1;
+    align-items:center;
+    justify-content:center;
+    flex-direction:row;
+}
+.viewer{
+    min-height: 500px;
+    min-width: 500px;
+    max-height: 500px;
+    max-width: 500px;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    overflow:hidden;
+    transform: rotate(45deg);
+}
+.quadlit{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+#q_left_top{
+    border-radius: 100% 0 0 0;
+    background:blue;
+        align-items:center;
+    justify-content:center;
+}
+
+#q_left_bottom{
+    border-radius: 0 0 0 100%;
+    background:green;
+        align-items:center;
+    justify-content:center;
+}
+#q_right_top{
+    border-radius: 0 100% 0 0;
+    background:yellow;
+        align-items:center;
+    justify-content:center;
+}
+#q_right_bottom{
+    border-radius: 0 0 100% 0;
+    background:orange;
+        align-items:center;
+    justify-content:center;
+}
+
+#roller{
+position: absolute;    
+min-height: 200px;
+min-width: 200px;
+max-width: 200px;
+max-height: 200px;
+background: black;    
+
+}
+
+#inner_circle{
+position: fixed;    
+min-height: 250px;
+min-width: 250px;
+max-width: 250px;
+max-height: 250px;
+background: black;
+border-radius:50%;
+margin-left:25%;
+margin-top:25%;
+}
+
+.viewer p{
+    transform: rotate(-45deg);
+    text-align:center;
+}
+
+@keyframes roll{
+    25%{
+        transform: translate(100%,0%) rotateY(180deg);
+    }
+    50%{
+        transform: translate(100%,100%) rotateZ(180deg);
+    }
+    75%{
+        transform: translate(0%,100%) rotateX(180deg);
+    }
+    100%{
+        transform: translate(0%,0%) rotateY(360deg);
+    }
+}
+
+</style>
+</head>
+<body>
+
+<div class="viewer">
+    <div class="quadlit">
+        <div class="quadlit" id="q_left_top">
+            
+            <p> left top</p>
+        </div>
+        <div class="quadlit" id="q_left_bottom">
+            <p> left bottom</p>
+        </div>
+    </div>
+    <div class="quadlit">
+        <div class="quadlit" id="q_right_top">
+            <p> right top</p>
+        </div>
+        <div class="quadlit" id="q_right_bottom">
+            <p> right bottom</p>
+        </div>
+    </div>
+
+    <div  id="inner_circle">
+
+    </div>
+
+</div>
+
+</body>
+</html>

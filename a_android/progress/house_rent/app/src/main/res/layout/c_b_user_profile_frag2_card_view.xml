@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardUseCompatPadding="true"
+    android:layout_gravity="center_horizontal"
+    android:id="@+id/c_b_user_profile_frag2_root">
+
+    <RelativeLayout
+        android:id="@+id/c_b_user_profile_frag2_main_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/profile_frag2_card1"
+        android:layout_width="350dp"
+        app:cardElevation="16dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp">
+
+        <RelativeLayout
+            android:id="@+id/profile_frag2_relative_layout1"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@color/Blue6">
+
+            <TextView
+                android:id="@+id/profile_main_frag2_txt1"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/firstname"
+                android:textSize="19sp"
+                android:textColor="@color/White"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/profile_main_frag2_txt2"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/profile_main_frag2_txt1"
+                android:text="first_name"
+                android:textColor="@color/TextColor2"
+                android:textSize="19sp" />
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/profile_frag2_card2"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        app:cardElevation="16dp"
+        android:layout_marginTop="25dp"
+        android:layout_below="@id/profile_frag2_card1">
+
+        <RelativeLayout
+            android:id="@+id/profile_frag2_relative_layout2"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@color/Blue6">
+
+            <TextView
+                android:id="@+id/profile_main_frag2_txt3"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/secondname"
+                android:textSize="19sp"
+                android:textColor="@color/White"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/profile_main_frag2_txt4"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/profile_main_frag2_txt3"
+                android:text="second_name_na"
+                android:textSize="19sp"
+                android:textColor="@color/TextColor2"/>
+
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/profile_frag2_card3"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        app:cardElevation="16dp"
+        android:layout_marginTop="25dp"
+        android:layout_below="@id/profile_frag2_card2">
+
+        <RelativeLayout
+            android:id="@+id/profile_frag2_relative_layout3"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@color/Blue6">
+
+            <TextView
+                android:id="@+id/profile_main_frag2_txt5"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/email"
+                android:textSize="19sp"
+                android:textColor="@color/White"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/profile_main_frag2_txt6"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/profile_main_frag2_txt5"
+                android:text="your_email_address_your_email"
+                android:textSize="19sp"
+                android:textColor="@color/TextColor2"/>
+
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/profile_frag2_card4"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        app:cardElevation="16dp"
+        android:layout_below="@id/profile_frag2_card3">
+
+        <RelativeLayout
+            android:id="@+id/profile_frag2_relative_layout4"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@color/Blue6">
+
+            <TextView
+                android:id="@+id/profile_main_frag2_txt7"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/national_id"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:textColor="@color/White"
+                />
+
+            <TextView
+                android:id="@+id/profile_main_frag2_txt8"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/profile_main_frag2_txt7"
+                android:text="012345678901234567"
+                android:textSize="19sp"
+                android:textColor="@color/TextColor2"/>
+
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/profile_frag2_card5"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        app:cardElevation="16dp"
+        android:layout_below="@id/profile_frag2_card4">
+
+        <RelativeLayout
+            android:id="@+id/profile_frag2_relative_layout5"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@color/Blue6">
+
+            <TextView
+                android:id="@+id/profile_main_frag2_txt9"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/contact_no"
+                android:textSize="19sp"
+                android:textColor="@color/White"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/profile_main_frag2_txt10"
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/profile_main_frag2_txt9"
+                android:text="01718738903"
+                android:textSize="19sp"
+                android:textColor="@color/TextColor2"/>
+
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/profile_frag2_card6"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        app:cardElevation="16dp"
+        android:layout_below="@id/profile_frag2_card5">
+
+        <RelativeLayout
+            android:id="@+id/profile_frag2_relative_layout6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/White">
+
+            <TextView
+                android:id="@+id/profile_main_frag2_txt11"
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="20dp"
+                android:text="@string/upload_photo"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:textColor="@color/Blue4"
+                android:textAlignment="center"
+                android:background="@color/White"
+                />
+
+            <ImageView
+                android:id="@+id/profile_main_frag2_img1"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/profile_main_frag2_txt11"
+                android:src="@drawable/ic_add_to_photos_black_50dp"
+                />
+
+            <ImageView
+                android:id="@+id/profile_main_frag2_img2"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="130dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_below="@+id/profile_main_frag2_img1"
+                android:src="@drawable/ic_image_black_60dp"
+                />
+
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/profile_frag2_card7"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        app:cardElevation="16dp"
+        android:layout_marginTop="25dp"
+        android:visibility="visible"
+        android:backgroundTint="@color/Blue6"
+        android:layout_below="@+id/profile_frag2_card6">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+        <RelativeLayout
+            android:id="@+id/profile_frag2_card7_upper"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:id="@+id/profile_frag2_card7_upper_title_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:cardElevation="32dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="@string/set_your_phone_number"
+                    android:textAllCaps="false"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:textSize="19sp"
+                    android:textColor="@color/TextColor2"/>
+                </com.google.android.material.card.MaterialCardView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/profile_frag2_card7_upper_underline"
+                android:layout_below="@id/profile_frag2_card7_upper_title_layout"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="3dp"
+                android:background="@color/Green3"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/profile_frag2_card7_lower"
+            android:layout_below="@id/profile_frag2_card7_upper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center">
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/profile_frag2_card7_lower_card1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="32dp">
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/profile_frag2_card7_lower_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:theme="@style/ThemeOverlay.AppCompat.Light"
+                android:spinnerMode="dialog">
+            </androidx.appcompat.widget.AppCompatSpinner>
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/profile_frag2_card7_lower_card2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/profile_frag2_card7_lower_card1"
+                app:cardElevation="32dp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/White">
+            <EditText
+                android:id="@+id/profile_frag2_card7_lower_number_input"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:hint="@string/enter_mobile_number_here"
+                android:textColorHint="@color/Green7"
+                android:textColor="@color/Red"
+                android:textSize="15sp"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:inputType="number"
+                android:importantForAutofill="no" />
+                </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/profile_frag2_card7_lower_card3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/Blue6"
+                android:layout_below="@id/profile_frag2_card7_lower_card2"
+                app:cardElevation="32dp"
+                app:cardCornerRadius="15dp"
+                app:cardUseCompatPadding="true">
+                <Button
+                    android:id="@+id/profile_frag2_card7_lower_submit_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/verify_number"
+                    android:textColor="@color/Red"
+                    android:textSize="15sp"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:background="@color/White"/>
+            </com.google.android.material.card.MaterialCardView>
+        </RelativeLayout>
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/profile_frag2_card8"
+            android:layout_below="@+id/profile_frag2_card6"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            app:cardElevation="16dp"
+            android:layout_marginTop="20dp"
+            android:visibility="gone"
+            app:cardCornerRadius="20dp"
+            app:cardUseCompatPadding="true"
+            android:backgroundTint="@color/Green3">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/c_b_user_profile_frag2_pop_up_view_sheet_01"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+                    <TextView
+                        android:id="@+id/c_b_user_profile_frag2_pop_up_view_sheet_01_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="15sp"
+                        android:textAllCaps="false"
+                        android:textAlignment="center"
+                        android:text="@string/enter_code_from_sms_or_email"
+                        android:textColor="@color/White"
+                        android:background="@color/Blue6"
+                        />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/c_b_user_profile_frag2_pop_up_view_sheet_02"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/White"
+                    android:layout_below="@id/c_b_user_profile_frag2_pop_up_view_sheet_01">
+                    <EditText
+                        android:id="@+id/c_b_user_profile_frag2_pop_up_view_sheet_02_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="15sp"
+                        android:textAllCaps="false"
+                        android:textAlignment="center"
+                        android:text="@string/type_here"
+                        android:textColor="@color/Pink1"
+                        android:background="@color/White"
+                        />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/c_b_user_profile_frag2_pop_up_view_sheet_03"
+                    android:layout_width="match_parent"
+                    android:background="@color/Blue6"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:layout_below="@id/c_b_user_profile_frag2_pop_up_view_sheet_02">
+                    <RelativeLayout
+                        android:id="@+id/c_b_user_profile_frag2_pop_up_view_sheet_03_sub_01"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:gravity="center">
+                        <Button
+                            android:id="@+id/c_b_user_profile_frag2_pop_up_view_sheet_03_close_btn_01"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:textSize="15sp"
+                            android:textAllCaps="false"
+                            android:textAlignment="center"
+                            android:text="@string/cancel"
+                            android:textColor="@color/White"
+                            android:background="@color/Blue6"
+                            />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/c_b_user_profile_frag2_pop_up_view_sheet_03_sub_02"
+                        android:layout_width="3dp"
+                        android:background="@color/TextColor2"
+                        android:layout_height="50dp"
+                        android:layout_toEndOf="@+id/c_b_user_profile_frag2_pop_up_view_sheet_03_sub_01">
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/c_b_user_profile_frag2_pop_up_view_sheet_03_sub_03"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_toEndOf="@id/c_b_user_profile_frag2_pop_up_view_sheet_03_sub_02">
+
+                        <Button
+                            android:id="@+id/c_b_user_profile_frag2_pop_up_view_sheet_03_submit_btn_01"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:textSize="15sp"
+                            android:textAllCaps="false"
+                            android:textAlignment="center"
+                            android:text="@string/ok"
+                            android:textColor="@color/White"
+                            android:background="@color/Blue6"
+                            />
+                    </RelativeLayout>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/c_b_user_profile_frag2_pop_up_view_sheet_04"
+                    android:layout_width="match_parent"
+                    android:background="@color/White"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:layout_below="@+id/c_b_user_profile_frag2_pop_up_view_sheet_03">
+                    <ImageView
+                        android:id="@+id/c_b_user_profile_frag2_pop_up_view_sheet_04_img"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/White"
+                        android:src="@drawable/loading"
+                        android:tooltipText="Waiting"
+                        android:contentDescription="@string/pending">
+
+                    </ImageView>
+                </RelativeLayout>
+            </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </RelativeLayout>
+</com.google.android.material.card.MaterialCardView>

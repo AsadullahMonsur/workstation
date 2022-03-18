@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="488.0" prefWidth="905.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.PurchaseListController">
+   <children>
+      <TableView fx:id="table2" layoutX="187.0" layoutY="19.0" prefHeight="469.0" prefWidth="718.0">
+        <columns>
+          <TableColumn fx:id="Prp" prefWidth="351.0" text="Product" />
+          <TableColumn fx:id="Prc" prefWidth="356.0" text="Price" />
+        </columns>
+      </TableView>
+      <Button layoutX="55.0" layoutY="225.0" mnemonicParsing="false" onAction="#Loadbt" prefHeight="39.0" prefWidth="85.0" text="Load" AnchorPane.topAnchor="225.0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

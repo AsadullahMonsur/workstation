@@ -1,0 +1,6 @@
+
+arcoreimg.exe build-db 
+  --input_images_directory="C:\Users\Asadullah Monsur\Downloads\images" 
+  --output_db_path="C:\Users\Asadullah Monsur\Downloads\imagedb.imgdb"
+
+arcoreimg.exe build-db --input_images_directory="C:\Users\Asadullah Monsur\Downloads\images_01" --output_db_path="C:\Users\Asadullah Monsur\Downloads\imagedb_01.imgdb"

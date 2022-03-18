@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+
+    <item
+        android:id="@+id/owner_profile"
+        android:title="@string/my_info"
+        android:icon="@drawable/ic_person_black_24dp"
+        />
+
+    <item
+        android:id="@+id/owner_set_objectives"
+        android:title="@string/set_objectives"
+        android:icon="@drawable/ic_create_black_24dp"
+        />
+    <item
+        android:id="@+id/owner_set_income"
+        android:title="@string/set_income"
+        android:icon="@drawable/ic_attach_money_black_24dp"
+        />
+
+
+    <item
+        android:id="@+id/owner_add_manager"
+        android:title="@string/add_managers"
+        android:icon="@drawable/ic_add_circle_black_24dp"
+        />
+    <item
+        android:id="@+id/owner_add_players"
+        android:title="@string/add_players"
+        android:icon="@drawable/ic_add_circle_black_24dp"
+        />
+
+        <item
+            android:id="@+id/owner_view_manager"
+            android:title="@string/my_managers"
+            android:icon="@drawable/ic_group_black_24dp"
+            />
+        <item
+            android:id="@+id/owner_view_players"
+            android:title="@string/my_players"
+            android:icon="@drawable/ic_group_black_24dp"
+            />
+        <item
+            android:id="@+id/owner_log_out"
+            android:title="@string/log_out"
+            android:icon="@drawable/ic_eject_black_24dp"
+            />
+</group>
+</menu>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:background="@color/White">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:text="Your have scored :"
+                android:textSize="25sp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark" />
+
+        </TableRow>
+
+
+        <TableRow
+            android:layout_marginTop="30dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/player_cont3_goals"
+                android:text="your_goals"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="italic"
+                android:textColor="@color/TextColor"
+                android:background="@color/Green2"
+                />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="40dp"
+            android:gravity="center">
+
+            <TextView
+                android:text="goals so far..."
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:textColor="@color/colorPrimaryDark"
+                />
+
+        </TableRow>
+
+    </TableLayout>
+
+
+</RelativeLayout>

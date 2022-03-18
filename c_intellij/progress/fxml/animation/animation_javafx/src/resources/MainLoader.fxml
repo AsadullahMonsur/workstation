@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.shape.Rectangle?>
+
+<StackPane maxHeight="600.0" maxWidth="800.0" minHeight="600.0" minWidth="800.0" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.MainLoaderController">
+   <children>
+      <TilePane maxHeight="600.0" maxWidth="800.0" minHeight="600.0" minWidth="800.0" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #ffffff;" StackPane.alignment="CENTER">
+         <children>
+            <Rectangle fx:id="box_00" arcHeight="5.0" arcWidth="5.0" fill="#020e2f" height="200.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="50.0" width="200.0" />
+            <Rectangle fx:id="box_01" arcHeight="5.0" arcWidth="5.0" fill="#020e2f" height="200.0" layoutX="10.0" layoutY="10.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="50.0" width="200.0" />
+            <Rectangle fx:id="box_02" arcHeight="5.0" arcWidth="5.0" fill="#020e2f" height="200.0" layoutX="10.0" layoutY="10.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="50.0" width="200.0" />
+            <Rectangle fx:id="box_03" arcHeight="5.0" arcWidth="5.0" fill="#020e2f" height="200.0" layoutX="210.0" layoutY="10.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="50.0" width="200.0" />
+            <Rectangle fx:id="box_10" arcHeight="5.0" arcWidth="5.0" fill="#020e2f" height="200.0" layoutX="10.0" layoutY="10.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="50.0" width="200.0" />
+            <Rectangle fx:id="box_11" arcHeight="5.0" arcWidth="5.0" fill="#020e2f" height="200.0" layoutX="210.0" layoutY="10.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="50.0" width="200.0" />
+            <Rectangle fx:id="box_12" arcHeight="5.0" arcWidth="5.0" fill="#020e2f" height="200.0" layoutX="410.0" layoutY="10.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="50.0" width="200.0" />
+            <Rectangle fx:id="box_13" arcHeight="5.0" arcWidth="5.0" fill="#020e2f" height="200.0" layoutX="610.0" layoutY="10.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="50.0" width="200.0" />
+            <Rectangle fx:id="box_20" arcHeight="5.0" arcWidth="5.0" fill="#020e2f" height="200.0" layoutX="10.0" layoutY="210.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="50.0" width="200.0" />
+            <Rectangle fx:id="box_21" arcHeight="5.0" arcWidth="5.0" fill="#020e2f" height="200.0" layoutX="210.0" layoutY="210.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="50.0" width="200.0" />
+            <Rectangle fx:id="box_22" arcHeight="5.0" arcWidth="5.0" fill="#020e2f" height="200.0" layoutX="410.0" layoutY="210.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="50.0" width="200.0" />
+            <Rectangle fx:id="box_23" arcHeight="5.0" arcWidth="5.0" fill="#020e2f" height="200.0" layoutX="610.0" layoutY="210.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="50.0" width="200.0" />
+         </children>
+         <StackPane.margin>
+            <Insets />
+         </StackPane.margin>
+      </TilePane>
+   </children>
+</StackPane>

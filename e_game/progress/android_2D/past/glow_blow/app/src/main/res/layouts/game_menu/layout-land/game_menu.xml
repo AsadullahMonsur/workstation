@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="@color/white"
+    tools:ignore="HardCodedText">
+
+  <RelativeLayout
+      android:id="@+id/game_menu_options_rel"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerInParent="true">
+
+    <ImageView
+        android:id="@+id/game_menu_options_img"
+        android:layout_width="448dp"
+        android:layout_height="448dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_glow_blow_options_outlined" />
+  </RelativeLayout>
+
+  <RelativeLayout
+      android:id="@+id/game_menu_ring_rel"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerVertical="true"
+      android:layout_centerHorizontal="true">
+
+    <ImageView
+        android:id="@+id/game_menu_ring_img"
+        android:layout_width="324dp"
+        android:layout_height="324dp"
+        android:layout_centerInParent="true"
+       />
+  </RelativeLayout>
+  <RelativeLayout
+      android:id="@+id/game_menu_left_control_rel"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerVertical="true"
+      android:layout_centerHorizontal="true"
+      android:layout_toLeftOf="@id/game_menu_options_rel">
+
+    <ImageView
+        android:id="@+id/game_menu_left"
+        android:layout_height="45dp"
+        android:layout_width="45dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/glow_blow_remove_circle"/>
+  </RelativeLayout>
+  <RelativeLayout
+      android:id="@+id/game_menu_right_control_rel"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerVertical="true"
+      android:layout_centerHorizontal="true"
+      android:layout_toRightOf="@id/game_menu_options_rel">
+    <ImageView
+        android:id="@+id/game_menu_right"
+        android:layout_height="45dp"
+        android:layout_width="45dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/glow_blow_add_circle"/>
+  </RelativeLayout>
+</RelativeLayout>

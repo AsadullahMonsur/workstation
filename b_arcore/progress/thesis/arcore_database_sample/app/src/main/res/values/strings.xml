@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">arcore_database_sample</string>
+    <string name="serialize">Serialize</string>
+    <string name="abc_text">abc is visible</string>
+    <string name="def_text">def visible</string>
+    <string name="masjid_00">Baitullah Detected</string>
+    <string name="masjid_01">Masjid E Nabawi Detected</string>
+    <string name="masjid_02">Al Aqsa Masjid Detected</string>
+    <string name="empty">empty</string>
+</resources>

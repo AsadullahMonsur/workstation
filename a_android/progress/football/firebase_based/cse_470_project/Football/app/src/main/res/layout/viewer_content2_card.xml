@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/blue">
+    <RelativeLayout
+        android:id="@+id/viewer_cont2_port_01"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:gravity="center_horizontal">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/viewer_cont2_port_01_card"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="16dp"
+            app:cardUseCompatPadding="true"
+            android:backgroundTint="@color/white">
+
+            <TextView
+                android:id="@+id/viewer_cont2_port_01_card_tv1"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:text="@string/player_id"
+                android:textStyle="bold|italic"
+                android:textAlignment="center"
+                android:textSize="21sp"
+                android:textAllCaps="false"
+                android:textColor="@color/pink"/>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/viewer_cont2_port_02"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/viewer_cont2_port_01">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/viewer_cont2_port_02_card"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="16dp"
+            app:cardUseCompatPadding="true"
+            android:backgroundTint="@color/colorPrimary">
+
+            <TextView
+                android:id="@+id/viewer_cont2_port_02_card_tv1"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:text="@string/player_name"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textSize="21sp"
+                android:textAllCaps="false"
+                android:textColor="@color/TextColor2"/>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/viewer_cont2_port_03"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/viewer_cont2_port_02">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/viewer_cont2_port_03_card"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="16dp"
+            app:cardUseCompatPadding="true"
+            android:backgroundTint="@color/colorPrimary">
+
+            <TextView
+                android:id="@+id/viewer_cont2_port_03_card_tv1"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:text="@string/player_country"
+                android:textStyle="bold|italic"
+                android:textAlignment="center"
+                android:textSize="21sp"
+                android:textAllCaps="false"
+                android:textColor="@color/TextColor"/>
+
+        </com.google.android.material.card.MaterialCardView>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/viewer_cont2_port_04"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/viewer_cont2_port_03">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/viewer_cont2_port_04_card"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="16dp"
+            app:cardUseCompatPadding="true"
+            android:backgroundTint="@color/colorPrimary">
+
+            <TextView
+                android:id="@+id/viewer_cont2_port_04_card_tv1"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:text="@string/player_position"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textSize="21sp"
+                android:textAllCaps="false"
+                android:textColor="@color/Blue3"/>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

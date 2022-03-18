@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes move {
+  0% {
+    offset-distance: 0%;
+  }
+  100% {
+    offset-distance: 100%;
+  }
+}
+
+#viewer{
+    min-height: 100vh;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    background-image: url('lc.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.content{
+  margin-top: 100px;
+    display: flex;
+    flex: 1;
+    max-height: 200px;
+    min-height: 200px;
+}
+
+.content:nth-child(odd){
+  background: rgba(151, 149, 149, 0.66) ;
+  animation: dance .5s infinite ease-out;
+}
+
+@keyframes dance {
+  100%{
+    
+  }
+}
+
+.content:nth-child(even){
+  background:  hsla(240, 87%, 3%, 0.664);
+}
+
+/*  
+    background: linear-gradient(
+      to right, hsla(240, 87%, 3%, 0.664) 100%, rgba(151, 149, 149, 0.66) 0%);
+*/
+
+#layer{
+ position: absolute;
+ min-width: 250px;
+ max-width: 250px;
+ min-height: 100%;
+ text-align: center;
+ background: rgba(151, 149, 149, 0.66);
+ transition: .75s ease-out;
+}
+
+#fly{
+ position: absolute;
+ min-width: 32px;
+ max-width: 32px;
+ min-height: 8px;
+ background: rgb(43, 207, 10);
+ transition: 2s ease-out;
+ offset-path: path('M160 0 L350 0 L350 100 L0 100 L0 0 L160 0 Z');
+ filter: blur(2px);
+ box-shadow: 0px 0px 2px rgb(43, 207, 10);
+ animation: move 3.5s infinite ease-out;
+}
+
+
+</style>
+</head>
+<body>
+    <div id="viewer">
+
+      <div class="content" id="c1"></div>
+      <div class="content" id="c2"></div>
+      <div class="content" id="c3"></div>
+      <div class="content" id="c4"></div>
+      <div class="content" id="c5"></div>
+      <div class="content" id="c6"></div>
+      <div class="content" id="c7"></div>
+      <div class="content" id="c8"></div>
+
+    </div>
+</body>
+</html>
+
+

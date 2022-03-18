@@ -1,0 +1,194 @@
+body{
+    margin: 0;
+    padding: 0;
+    --wide-width:100vh;
+    overflow: hidden;
+}
+
+.viewer{
+min-height: 100vh;
+display: flex;
+flex-direction: row;
+flex: 1;
+background: #555;
+}
+
+.content_left{
+max-height: 100vh;
+display: flex;
+flex-direction: row;
+flex: 1;
+align-items: center;
+justify-content: center;
+background: linear-gradient(to right, white 50%, black 50%);
+background-size: 200% 100%;
+background-position: left bottom;
+transition: all .5s ease-out;
+animation: alcontent 5s ease-out infinite;
+}
+
+@keyframes alcontent{
+0%{
+background-position: left bottom;
+}
+35%{
+background-position: right bottom;
+}
+55%{
+background-position: right bottom;
+}
+90%{
+background-position: left bottom;
+}
+}
+
+.content_right{
+max-height: 100vh;
+display: flex;
+flex-direction: row;
+flex: 1;
+align-items: center;
+justify-content: center;
+background: linear-gradient(to right,white 50%,black 50%);
+background-size: 200% 100%;
+background-position: right bottom;
+transition: all .5s ease-out;
+animation: arcontent 5s ease-out infinite;
+}
+
+@keyframes arcontent{
+0%{
+background-position: right bottom;
+}
+35%{
+background-position: left bottom;
+}
+55%{
+background-position: left bottom;
+}
+90%{
+background-position: right bottom;
+}
+}
+
+.left_text{
+color: black;
+text-align: center;
+font-size: 21px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-style: italic;
+font-weight: bolder;
+animation: altext 5s ease-out infinite;
+text-shadow:2px 2px 4px black;
+}
+
+@keyframes altext{
+0%{
+color: black;
+}
+40%{
+color: white;
+}
+50%{
+color: white;
+}
+90%{
+color: black}
+}
+
+.right_text{
+color: white;
+text-align: center;
+font-size: 21px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-style: italic;
+font-weight: bolder;
+animation: artext 5s ease-out infinite;
+text-shadow: 2px 2px 4px white;
+}
+
+@keyframes artext{
+0%{
+color: white;
+}
+40%{
+color: black;
+}
+50%{
+color: black;
+}
+90%{
+color: white;
+}
+}
+
+#wave_holder{
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+    background: transparent;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}
+.wave{
+    position: absolute;
+    min-width: 20px;
+    min-height: 20px;
+    max-width: 20px;
+    max-height: 20px;
+    flex: 1;
+    background: transparent;
+    border-radius:50%;
+    border: 5px solid #6666;
+}
+
+#wave1{
+    animation: waver1 2.5s ease-out infinite;
+}
+#wave2{
+    animation: waver2 2.5s ease-out infinite;
+}
+
+@keyframes waver1{
+    0%{
+  
+    }    
+    45%{
+      min-width: var(--wide-width);
+      min-height: var(--wide-width);
+      max-width: var(--wide-width);
+      max-height: var(--wide-width);
+      z-index: 2;
+      box-shadow: 5px 5px 5px #6666;
+    }
+    50%{
+        border: none;
+        box-shadow: none;
+    } 
+    100%{
+        border: none;
+        box-shadow: none;
+    } 
+  }
+  
+  @keyframes waver2{  
+    55%{
+  
+    }  
+    90%{
+      min-width: var(--wide-width);
+      min-height: var(--wide-width);
+      max-width: var(--wide-width);
+      max-height: var(--wide-width);
+      z-index: 2;
+      box-shadow: 5px 5px 5px #6666;
+    }
+    100%{
+        border: none;
+        box-shadow: none;
+    } 
+  }
+  

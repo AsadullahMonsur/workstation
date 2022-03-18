@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="25dp"
+        app:cardUseCompatPadding="true"
+        android:elevation="8dp">
+
+        <RelativeLayout
+            android:id="@+id/e_display_list_support_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/e_display_list_support_port_01"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@color/blue"
+                android:elevation="16dp">
+                <RelativeLayout
+                    android:id="@+id/e_display_list_support_port_01_sub_01"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="@color/white">
+
+                    <ImageView android:id="@+id/e_display_list_support_port_01_sub_01_img"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/processor"
+                        android:contentDescription="@string/processor_info" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/e_display_list_support_port_01_sub_02"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/e_display_list_support_port_01_sub_01"
+                    android:background="@color/white">
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/e_display_list_support_port_01_sub_03"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_below="@id/e_display_list_support_port_01_sub_02"
+                    android:background="@color/white"
+                    android:layout_marginTop="10dp">
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/e_display_list_support_port_02"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@id/e_display_list_support_port_01"
+                android:background="@color/white">
+                <RelativeLayout
+                    android:id="@+id/e_display_list_support_port_02_sub_01"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="@color/blue">
+                    <ImageView android:id="@+id/e_display_list_support_port_02_sub_01_img"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/star"
+                        android:contentDescription="@string/processor_info" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/e_display_list_support_port_02_sub_02"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/e_display_list_support_port_02_sub_01"
+                    android:background="@color/blue">
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/e_display_list_support_port_02_sub_03"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_below="@id/e_display_list_support_port_02_sub_02"
+                    android:background="@color/blue"
+                    android:layout_marginTop="10dp">
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/e_display_list_support_port_03"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@id/e_display_list_support_port_02"
+            android:background="@color/blue"
+            android:elevation="16dp">
+            <RelativeLayout
+                android:id="@+id/e_display_list_support_port_03_sub_01"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/white">
+                <ImageView android:id="@+id/e_display_list_support_port_03_sub_01_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/square"
+                    android:contentDescription="@string/processor_info" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/e_display_list_support_port_03_sub_02"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/e_display_list_support_port_03_sub_01"
+                android:background="@color/white">
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/e_display_list_support_port_03_sub_03"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@id/e_display_list_support_port_03_sub_02"
+                android:background="@color/white"
+                android:layout_marginTop="10dp">
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/e_display_list_support_port_04"
+            android:layout_height="60dp"
+            android:layout_width="match_parent"
+            android:layout_below="@id/e_display_list_support_port_03"
+            android:background="@color/teal_700">
+        </RelativeLayout>
+
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+</RelativeLayout>

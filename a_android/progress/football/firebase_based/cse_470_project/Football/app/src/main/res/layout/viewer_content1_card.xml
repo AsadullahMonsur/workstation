@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/White">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_marginTop="50dp"
+                android:gravity="center"
+                >
+
+                <TextView
+                    android:text="First Name :"
+                    android:textSize="25sp"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimaryDark" />
+
+            </TableRow>
+
+
+            <TableRow
+                android:layout_marginTop="30dp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/viewer_cont1_id"
+                    android:text="your_first_name"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textStyle="italic"
+                    android:textColor="@color/TextColor"
+                    android:background="@color/Green2"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                >
+
+                <TextView
+                    android:text="Last Name :"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textSize="25sp"
+                    android:textColor="@color/colorPrimaryDark"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                >
+
+                <TextView
+                    android:id="@+id/viewer_cont1_name"
+                    android:text="your_last_name"
+                    android:textSize="20sp"
+                    android:textAlignment="center"
+                    android:textStyle="italic"
+                    android:textColor="@color/TextColor"
+                    android:background="@color/Green2"
+                    />
+
+            </TableRow>
+
+
+            <TableRow
+                android:layout_marginTop="40dp"
+                android:gravity="center">
+
+                <TextView
+                    android:text="Email Address :"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:textColor="@color/colorPrimaryDark"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="40dp"
+                android:gravity="center"
+                >
+
+                <TextView
+                    android:id="@+id/viewer_cont1_email"
+                    android:text="your_mail"
+                    android:textStyle="italic"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textColor="@color/TextColor"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="40dp"
+                android:gravity="center">
+
+                <TextView
+                    android:text="Reset Password : "
+                    android:textSize="25sp"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimaryDark"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="40dp"
+                android:gravity="center">
+
+                <EditText
+                    android:id="@+id/viewer_cont1_password"
+                    android:hint="retype password"
+                    android:textSize="20sp"
+                    android:textAlignment="center"
+                    android:textStyle="italic"
+                    android:textColor="@color/TextColor2"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="40dp"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/viewer_confirm_change"
+                    android:text="Change Confirm"
+                    android:textAlignment="center"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/TextColor2"
+                    android:background="@color/colorPrimaryDark"
+                    />
+
+            </TableRow>
+
+        </TableLayout>
+</RelativeLayout>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="darkroom_side_bar_container" prefHeight="720.0" prefWidth="200.0" style="-fx-background-color: #100d0d;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.orangeflower.darkroom_manager.DarkroomSideBar">
+   <children>
+      <VBox fx:id="darkroom_side_bar_holder" layoutX="50.0" layoutY="214.0" prefHeight="720.0" prefWidth="200.0" style="-fx-background-color: #100d0d;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane fx:id="darkroom_side_bar_title_extender" prefHeight="60.0" prefWidth="200.0" style="-fx-border-color: #000000; -fx-background-color: #000000; -fx-border-radius: 10; -fx-background-radius: 10;">
+               <children>
+                  <AnchorPane fx:id="darkroom_side_bar_title_container" layoutX="160.0" layoutY="12.5" prefHeight="35.0" prefWidth="35.0" style="-fx-background-color: #b5afaf; -fx-background-radius: 45;">
+                     <children>
+                        <ImageView fx:id="darkroom_side_bar_title_close_btn" fitHeight="35.0" fitWidth="35.0" layoutX="151.0" layoutY="5.0" onMouseEntered="#on_entering_bar_title_close_btn" onMouseExited="#on_leaving_bar_title_close_btn" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <image>
+                              <Image url="@../../images/window/exit.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="darkroom_side_bar_extender" prefHeight="50.0" prefWidth="200.0">
+               <VBox.margin>
+                  <Insets top="25.0" />
+               </VBox.margin>
+            </AnchorPane>
+            <AnchorPane fx:id="darkroom_side_bar_instructions_btn_container" prefHeight="35.0" prefWidth="200.0" style="-fx-background-color: black;">
+               <VBox.margin>
+                  <Insets top="25.0" />
+               </VBox.margin>
+               <children>
+                  <Button fx:id="darkroom_side_bar_instruction_btn" mnemonicParsing="false" onMouseEntered="#on_entering_to_instructions" onMouseExited="#on_leave_instructions" prefHeight="35.0" prefWidth="200.0" style="-fx-background-color: black;" text="Instructions" textFill="#b5afaf" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="2.0">
+                     <font>
+                        <Font name="Comic Sans MS Bold Italic" size="15.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="darkroom_side_bar_game_container" prefHeight="35.0" prefWidth="200.0" style="-fx-background-color: black;">
+               <VBox.margin>
+                  <Insets top="25.0" />
+               </VBox.margin>
+               <children>
+                  <Button fx:id="darkroom_side_bar_game_btn" mnemonicParsing="false" onMouseEntered="#on_entering_game" onMouseExited="#on_leave_game" prefHeight="35.0" prefWidth="200.0" style="-fx-background-color: black;" text="Game" textFill="#b5afaf" AnchorPane.bottomAnchor="3.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="2.0">
+                     <font>
+                        <Font name="Comic Sans MS Bold Italic" size="15.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="darkroom_side_bar_championship_container" prefHeight="35.0" prefWidth="200.0" style="-fx-background-color: black;">
+               <VBox.margin>
+                  <Insets top="25.0" />
+               </VBox.margin>
+               <children>
+                  <Button fx:id="darkroom_side_bar_championship_btn" mnemonicParsing="false" onMouseEntered="#on_entering_championship" onMouseExited="#on_leave_championship" prefHeight="35.0" prefWidth="200.0" style="-fx-background-color: black;" text="Championship" textFill="#b5afaf" AnchorPane.bottomAnchor="3.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="2.0">
+                     <font>
+                        <Font name="Comic Sans MS Bold Italic" size="15.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="darkroom_side_bar_showroom_container" prefHeight="35.0" prefWidth="200.0" style="-fx-background-color: black;">
+               <VBox.margin>
+                  <Insets top="25.0" />
+               </VBox.margin>
+               <children>
+                  <Button fx:id="darkroom_side_bar_showroom_btn" mnemonicParsing="false" onMouseClicked="#showroom_opener" onMouseEntered="#on_entering_showroom" onMouseExited="#on_leave_showroom" prefHeight="35.0" prefWidth="200.0" style="-fx-background-color: black;" text="Car Showroom" textFill="#b5afaf" AnchorPane.bottomAnchor="3.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="2.0">
+                     <font>
+                        <Font name="Comic Sans MS Bold Italic" size="15.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="darkroom_side_bar_friends_container" prefHeight="35.0" prefWidth="200.0" style="-fx-background-color: black;">
+               <VBox.margin>
+                  <Insets top="25.0" />
+               </VBox.margin>
+               <children>
+                  <Button fx:id="darkroom_side_bar_friends_btn" mnemonicParsing="false" onMouseEntered="#on_entering_friends" onMouseExited="#on_leave_friends" prefHeight="35.0" prefWidth="200.0" style="-fx-background-color: black;" text="Friends" textFill="#b5afaf" AnchorPane.bottomAnchor="3.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="2.0">
+                     <font>
+                        <Font name="Comic Sans MS Bold Italic" size="15.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="darkroom_side_bar_settings_container" prefHeight="35.0" prefWidth="200.0" style="-fx-background-color: black;">
+               <VBox.margin>
+                  <Insets top="25.0" />
+               </VBox.margin>
+               <children>
+                  <Button fx:id="darkroom_side_bar_settings_btn" mnemonicParsing="false" onMouseEntered="#on_entering_settings" onMouseExited="#on_leave_settings" prefHeight="35.0" prefWidth="200.0" style="-fx-background-color: black;" text="Settings" textFill="#b5afaf" AnchorPane.bottomAnchor="3.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="2.0">
+                     <font>
+                        <Font name="Comic Sans MS Bold Italic" size="15.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="darkroom_side_bar_notifications_container" prefHeight="35.0" prefWidth="200.0" style="-fx-background-color: black;">
+               <VBox.margin>
+                  <Insets top="25.0" />
+               </VBox.margin>
+               <children>
+                  <Button fx:id="darkroom_side_bar_notifications_btn" mnemonicParsing="false" onMouseEntered="#on_entering_notifications" onMouseExited="#on_leave_notifications" prefHeight="35.0" prefWidth="200.0" style="-fx-background-color: black;" text="Notifications" textFill="#b5afaf" AnchorPane.bottomAnchor="3.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="2.0">
+                     <font>
+                        <Font name="Comic Sans MS Bold Italic" size="15.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="darkroom_side_bar_exit_container" prefHeight="35.0" prefWidth="200.0" style="-fx-background-color: black;">
+               <VBox.margin>
+                  <Insets top="25.0" />
+               </VBox.margin>
+               <children>
+                  <Button fx:id="darkroom_side_bar_exit_btn" mnemonicParsing="false" onMouseEntered="#on_entering_exit" onMouseExited="#on_leave_exit" prefHeight="35.0" prefWidth="200.0" style="-fx-background-color: black;" text="Exit" textFill="#b5afaf" AnchorPane.bottomAnchor="3.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="2.0">
+                     <font>
+                        <Font name="Comic Sans MS Bold Italic" size="15.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="50dp"
+        android:id="@+id/player_cont7_view"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:text="Player List"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+       />
+
+    <GridView
+        android:layout_margin="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:id="@+id/owner_cont7_gv"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:numColumns="1"
+        android:background="@color/Green3"
+        android:verticalSpacing="30dp"
+        android:horizontalSpacing="30dp"
+        android:gravity="left"
+        android:layout_below="@id/player_cont7_view">
+    </GridView>
+
+</RelativeLayout>

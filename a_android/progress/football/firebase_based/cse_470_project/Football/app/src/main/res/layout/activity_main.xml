@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/Blue4">
+
+ <RelativeLayout
+   android:layout_width="match_parent"
+   android:layout_height="wrap_content"
+   android:background="@color/Blue4"
+   android:layout_gravity="center_horizontal"
+   android:gravity="center">
+     <com.google.android.material.card.MaterialCardView
+       android:layout_marginTop="15dp"
+       android:id="@+id/main_activity_card_01"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       app:cardElevation="16dp"
+       app:cardUseCompatPadding="true"
+       android:backgroundTint="@color/Blue4"
+       android:layout_centerHorizontal="true">
+    <TextView
+        android:layout_width             = "match_parent"
+        android:layout_height            = "70dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:text                     = "@string/sign_in_as"
+        android:textSize                 = "30sp"
+        android:textColor                = "@color/TextColor"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textStyle="bold|italic"
+        />
+     </com.google.android.material.card.MaterialCardView>
+   <com.google.android.material.card.MaterialCardView
+       android:id="@+id/main_activity_card_02"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@id/main_activity_card_01"
+       app:cardElevation="8dp"
+       app:cardCornerRadius="15dp"
+       app:cardUseCompatPadding="true"
+       android:layout_centerHorizontal="true"
+       android:backgroundTint="@color/Blue4">
+    <Button
+        android:id                      = "@+id/owner"
+        android:layout_width            = "match_parent"
+        android:layout_height           = "50dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text                    = "@string/owner"
+        android:textSize                = "18sp"
+        android:textAllCaps="false"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textColor               = "@color/TextColor2"
+        android:background              = "@color/ButtonColor"
+        android:onClick                 = "clickIt"
+        />
+
+   </com.google.android.material.card.MaterialCardView>
+ <com.google.android.material.card.MaterialCardView
+     android:id="@+id/main_activity_card_03"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     app:cardElevation="8dp"
+     app:cardCornerRadius="15dp"
+     app:cardUseCompatPadding="true"
+     android:layout_centerHorizontal="true"
+     android:layout_below="@id/main_activity_card_02"
+     android:backgroundTint="@color/Blue4">
+    <Button
+        android:id                      = "@+id/manager"
+        android:layout_width            = "match_parent"
+        android:layout_height           = "50dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text                    = "@string/manager"
+        android:textSize                = "18sp"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:textColor               = "@color/TextColor2"
+        android:background              = "@color/ButtonColor"
+        android:onClick                 = "clickIt" />
+
+ </com.google.android.material.card.MaterialCardView>
+<com.google.android.material.card.MaterialCardView
+    android:id="@+id/main_activity_card_04"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="8dp"
+    app:cardCornerRadius="15dp"
+    app:cardUseCompatPadding="true"
+    android:layout_centerHorizontal="true"
+    android:layout_below="@id/main_activity_card_03"
+    android:backgroundTint="@color/Blue4">
+    <Button
+        android:id                      = "@+id/player"
+        android:layout_width            = "match_parent"
+        android:layout_height           = "50dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text                    = "@string/player"
+        android:textSize                = "18sp"
+        android:textAllCaps="false"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textColor               = "@color/TextColor2"
+        android:background              = "@color/ButtonColor"
+        android:onClick                 = "clickIt"
+        />
+</com.google.android.material.card.MaterialCardView>
+<com.google.android.material.card.MaterialCardView
+    android:id="@+id/main_activity_card_05"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="8dp"
+    app:cardCornerRadius="15dp"
+    app:cardUseCompatPadding="true"
+    android:layout_centerHorizontal="true"
+    android:layout_below="@id/main_activity_card_04"
+    android:backgroundTint="@color/Blue4">
+    <Button
+        android:id                      = "@+id/general"
+        android:layout_width            = "match_parent"
+        android:layout_height           = "50dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text                    = "@string/general_user"
+        android:textSize                = "18sp"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:textAlignment="center"
+        android:textColor               = "@color/TextColor2"
+        android:background              = "@color/ButtonColor"
+        android:onClick                 = "clickIt"
+        />
+</com.google.android.material.card.MaterialCardView>
+<com.google.android.material.card.MaterialCardView
+    android:id="@+id/main_activity_card_06"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="8dp"
+    app:cardUseCompatPadding="true"
+    android:layout_centerHorizontal="true"
+    android:layout_below="@id/main_activity_card_05"
+    android:backgroundTint="@color/Blue4">
+    <TextView
+      android:layout_width             = "match_parent"
+      android:layout_height            = "70dp"
+      android:layout_centerHorizontal  = "true"
+      android:text                     = "@string/or"
+      android:textSize                 = "30sp"
+      android:textAlignment="center"
+      android:gravity="center"
+      android:layout_gravity="center"
+      android:textStyle="bold|italic"
+      android:textAllCaps="false"
+      android:textColor                = "@color/TextColor" />
+ </com.google.android.material.card.MaterialCardView>
+  <com.google.android.material.card.MaterialCardView
+      android:id="@+id/main_activity_card_07"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      app:cardElevation="8dp"
+      app:cardCornerRadius="15dp"
+      app:cardUseCompatPadding="true"
+      android:layout_centerHorizontal="true"
+      android:layout_below="@id/main_activity_card_06"
+      android:backgroundTint="@color/Blue4">
+     <Button
+        android:id                      = "@+id/SignUp"
+        android:layout_width            = "match_parent"
+        android:layout_height           = "50dp"
+         android:layout_gravity="center"
+         android:gravity="center"
+        android:text                    = "@string/sign_up"
+        android:textSize                = "18sp"
+         android:textAllCaps="false"
+         android:textAlignment="center"
+         android:textStyle="bold"
+         android:textColor               = "@color/TextColor2"
+        android:background              = "@color/ButtonColor"
+        android:onClick                 = "clickIt"
+        />
+  </com.google.android.material.card.MaterialCardView>
+ </RelativeLayout>
+</ScrollView>

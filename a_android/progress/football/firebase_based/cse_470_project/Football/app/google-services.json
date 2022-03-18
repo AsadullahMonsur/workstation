@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1071963598201",
+    "firebase_url": "https://football-management-6df52.firebaseio.com",
+    "project_id": "football-management-6df52",
+    "storage_bucket": "football-management-6df52.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1071963598201:android:1307c63caccc0053cad3a8",
+        "android_client_info": {
+          "package_name": "com.example.football_management_system"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1071963598201-vm7c7od2kc87chto4hv44hm923s2j8u0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.football_management_system",
+            "certificate_hash": "053b8c54aea30ac10991571cc71bdac2e06090c5"
+          }
+        },
+        {
+          "client_id": "1071963598201-9p63ahlbtkks20ok8ekhtu3hmgaebbo3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5HC6T8olUSdd4DrrjzPm0NS601xogdPs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1071963598201-9p63ahlbtkks20ok8ekhtu3hmgaebbo3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

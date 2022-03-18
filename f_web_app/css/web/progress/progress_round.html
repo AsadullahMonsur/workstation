@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+background:rgb(55, 66, 87);
+}
+#grad1 {
+    margin-left: 30%;
+    display: flex;
+  position:absolute;
+  height: 100px;
+  width: 100px;
+  border-radius:50%;
+background-image: conic-gradient(white 45deg,black 0deg);
+
+align-items: center;
+justify-content:center;
+animation: do 5s infinite ease-out; 
+text-align: center;
+}
+
+#grad1 p{
+  align-self: flex-end;  
+  visibility: hidden;
+  color: rgb(47, 235, 0);
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+#t1{
+    animation: do_t1 5s infinite ease-out;
+}
+
+@keyframes do_t1{
+   1%{   
+     visibility: visible;
+   } 
+   16%{
+     visibility: hidden;  
+   }
+}
+
+#t2{
+    animation: do_t2 5s infinite ease-out;
+}
+
+@keyframes do_t2{
+   15%{
+    visibility: hidden;    
+   } 
+   16%{   
+     visibility: visible;
+   } 
+   32%{
+     visibility: hidden;  
+   }
+}
+
+#t3{
+    animation: do_t3 5s infinite ease-out;
+}
+
+@keyframes do_t3{
+    31%{
+        visibility: hidden;  
+    }
+   32%{   
+     visibility: visible;
+   } 
+   48%{
+     visibility: hidden;  
+   }
+}
+
+#t4{
+    animation: do_t4 5s infinite ease-out;
+}
+
+@keyframes do_t4{
+    47%{
+        visibility: hidden;  
+    }
+
+   48%{   
+     visibility: visible;
+   } 
+   60%{
+     visibility: hidden;  
+   }
+}
+
+#t5{
+    animation: do_t5 5s infinite ease-out;
+}
+@keyframes do_t5{
+   59%{
+    visibility: hidden;  
+   } 
+
+   60%{   
+     visibility: visible;
+   } 
+   72%{
+     visibility: hidden;  
+   }
+}
+
+#t6{
+    animation: do_t6 5s infinite ease-out;
+}
+@keyframes do_t6{
+   71%{
+    visibility: hidden;  
+   }
+
+   72%{   
+     visibility: visible;
+   } 
+   84%{
+     visibility: hidden;  
+   }
+}
+
+#t7{
+    animation: do_t7 5s infinite ease-out;
+}
+@keyframes do_t7{
+   83%{
+    visibility: hidden;  
+   }
+
+   84%{   
+     visibility: visible;
+   }
+
+   96%{
+     visibility: hidden;  
+   }
+}
+
+#t8{
+    animation: do_t8 5s infinite ease-out;
+}
+@keyframes do_t8{
+   95%{
+    visibility: hidden;  
+   }
+
+   96%{   
+     visibility: visible;
+   } 
+   100%{
+     visibility: hidden;  
+   }
+}
+
+
+@keyframes do{
+   6%{   
+    background-image: conic-gradient(white 45deg,black 0deg); 
+   }
+   11%{   
+    background-image: conic-gradient(white 45deg,black 0deg); 
+   }  
+   12%{
+background-image: conic-gradient(white 90deg,black 0deg);
+   }
+   23%{
+background-image: conic-gradient(white 90deg,black 0deg);
+   }
+   24%{
+background-image: conic-gradient(white 135deg,black 0deg);   
+}
+35%{
+background-image: conic-gradient(white 135deg,black 0deg);   
+}
+   36%{
+background-image: conic-gradient(white 180deg,black 0deg);
+   }
+   47%{
+background-image: conic-gradient(white 180deg,black 0deg);
+   }
+   48%{
+background-image: conic-gradient(white 225deg,black 0deg);
+   }
+   59%{
+background-image: conic-gradient(white 225deg,black 0deg);
+   }
+   60%{
+background-image: conic-gradient(white 270deg,black 0deg);
+   }
+   
+   71%{
+background-image: conic-gradient(white 270deg,black 0deg);
+   }
+  72%{
+background-image: conic-gradient(white 315deg,black 0deg);
+   }
+
+   83%{
+background-image: conic-gradient(white 315deg,black 0deg);
+   }
+  84%{
+background-image: conic-gradient(white 360deg,black 0deg);
+   }
+
+   99%{
+background-image: conic-gradient(white 360deg,black 0deg);
+   }
+      100%{
+background-image: conic-gradient(white 45deg,black 0deg);
+   }
+}
+</style>
+</head>
+<body>
+
+<div id="grad1">
+<p id="t1"> 0%</p>
+<p id="t2"> 16%</p>
+<p id="t3"> 32%</p>
+<p id="t4"> 48%</p>
+<p id="t5"> 64%</p>
+<p id="t6"> 80%</p>
+<p id="t7"> 100%</p>
+</div>
+
+</body>
+</html>

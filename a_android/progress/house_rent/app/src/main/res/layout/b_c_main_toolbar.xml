@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fitsSystemWindows="true"
+    android:background="@color/White"
+    tools:context=".user_home_main.User_Home_Page_Main">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+    <com.google.android.material.appbar.AppBarLayout
+    android:id="@+id/main_app_bar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fitsSystemWindows="true"
+    android:theme="@style/AppTheme.AppBarOverlay">
+
+    <com.google.android.material.appbar.CollapsingToolbarLayout
+
+    android:id="@+id/main_toolbar_layout"
+    android:layout_height="350dp"
+    android:layout_width="match_parent"
+    app:contentScrim="?attr/colorPrimaryDark"
+    app:layout_scrollFlags="scroll|exitUntilCollapsed"
+    app:expandedTitleGravity="top"
+    app:expandedTitleTextAppearance="@android:color/transparent"
+    android:fitsSystemWindows="true"
+    app:toolbarId="@+id/main_toolbar_id">
+
+    <ImageView
+    android:layout_width="match_parent"
+    android:layout_height="350dp"
+    app:layout_collapseMode="parallax"
+    android:src="@mipmap/home_main_3"
+    android:contentDescription="@string/app_name"
+    >
+    </ImageView>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/main_toolbar_id"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_collapseMode="pin"
+        app:popupTheme="@style/AppTheme.PopupOverlay"/>
+
+    </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabTextAppearance="@style/TabTitle"
+            app:tabGravity="fill"
+            android:background="@color/colorPrimary" />
+</com.google.android.material.appbar.AppBarLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.football_management_system">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/app_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/app_icon_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".user_authentication.Sign_Up_Page"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".user_authentication.Log_In_Page_1"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".user_authentication.Log_In_Page_2"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".owner.Owner_Home"/>
+        <activity android:name=".manager.Manager_Home"/>
+        <activity android:name=".player.Player_Home"/>
+        <activity android:name=".general_user.Viewer_Home"/>
+    </application>
+</manifest>

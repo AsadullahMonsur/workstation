@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <group
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/cm_market_card_menu"
+            android:orderInCategory="100"
+            android:title="@string/search"
+            android:icon="@drawable/ic_heart_2_60dp"
+            app:showAsAction="always"/>
+
+    </group>
+
+    <group
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/action_selection"
+            android:orderInCategory="100"
+            android:title="@string/select"
+            app:showAsAction="never" />
+        <item
+            android:id="@+id/action_deletion"
+            android:orderInCategory="100"
+            android:title="@string/delete"
+            app:showAsAction="never" />
+        <item
+            android:id="@+id/action_copy"
+            android:orderInCategory="100"
+            android:title="@string/copy"
+            app:showAsAction="never" />
+        <item
+            android:id="@+id/action_paste"
+            android:orderInCategory="100"
+            android:title="@string/paste"
+            app:showAsAction="never" />
+    </group>
+</menu>

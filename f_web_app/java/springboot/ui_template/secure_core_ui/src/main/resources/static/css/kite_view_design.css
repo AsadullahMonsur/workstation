@@ -1,0 +1,195 @@
+html,body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+/*auto indent clt+shit+i*/
+/*this is the root holder*/
+.view_layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+}
+
+/* for padding all sides*/
+/*.view_layout > * {
+    padding: 20px;
+  }
+*/
+
+.view_layout div:nth-of-type(even){
+    min-height: 312px;
+    min-width: 1024px;
+    visibility: inherit;
+    display: inherit;
+    flex-grow: 1;
+    background-color: transparent;
+}
+
+.view_layout div:nth-of-type(odd){
+  min-height: 50px;
+  min-width: 1024px;
+  visibility: inherit;
+  display: inherit;
+  flex-direction: inherit;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
+
+.view_layout div:nth-of-type(odd) nav{
+   min-height: 50px;
+   min-width: 1024px;
+   width: 100%;
+   visibility: inherit;
+   display: inherit;
+   flex-direction: inherit;
+   flex-grow: 1;
+   justify-content: space-between;
+   align-items: center;
+   background-color: transparent;
+  }
+   
+  .view_layout div:nth-of-type(odd) nav ul {
+    min-height: 50px;
+    min-width: 1024px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    visibility: inherit;
+    display: inherit;
+    flex-direction: row;
+    flex-grow: 1;
+    justify-content: space-between;
+    align-items: center;
+    order: 1;
+    list-style-type: none;
+    background-color: transparent;
+  }
+
+.view_layout div:nth-of-type(odd) nav ul:nth-child(n) li{
+  height: 50px;
+  visibility: inherit;
+  display: inherit;
+  flex-direction: inherit;
+  flex-grow: 1;
+  background-color: transparent;
+}
+
+.view_layout div:nth-of-type(odd) nav ul li:nth-child(1) button{
+  visibility: inherit;
+  display: inherit;
+  flex-direction: inherit;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  background-color: blue;
+  border: none;
+  stroke: none;
+}
+
+.view_layout div:nth-of-type(odd) nav ul li:nth-child(2) button{
+  visibility: inherit;
+  display: inherit;
+  flex-direction: inherit;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(217, 255, 0);
+  border: none;
+  stroke: none;
+}
+
+.view_layout div:nth-of-type(odd) nav ul li:nth-child(3) button{
+  visibility: inherit;
+  display: inherit;
+  flex-direction: inherit;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 0, 149);
+  border: none;
+  stroke: none;
+}
+
+.view_layout div:nth-of-type(odd) nav ul li:nth-child(4) button{
+  visibility: inherit;
+  display: inherit;
+  flex-direction: inherit;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 0, 0);
+  border: none;
+  stroke: none;
+}
+
+.view_layout div:nth-of-type(odd) nav ul li:nth-child(5) button{
+  visibility: inherit;
+  display: inherit;
+  flex-direction: inherit;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(9, 255, 0);
+  border: none;
+  stroke: none;
+}
+
+.view_layout div:nth-of-type(odd) nav ul li:nth-child(6) button{
+  visibility: inherit;
+  display: inherit;
+  flex-direction: inherit;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 204, 255);
+  border: none;
+  stroke: none;
+}
+
+  @media screen and (min-width: 500px) {
+    .view_layout div:nth-of-type(odd) ul {
+      width: auto;
+      margin-top: 0;
+    }
+  }
+
+
+  @media screen and (max-height: 500px) { 
+    .view_layout div:nth-of-type(odd){
+      max-height: 50px;
+    }
+    .view_layout div:nth-of-type(odd) nav{
+      max-height: 50px;
+    }
+    .view_layout div:nth-of-type(odd) nav ul{
+      max-height: 50px;
+    }
+    .view_layout div:nth-of-type(odd) nav ul:nth-child(n) li{
+      height: 50px;
+    }
+    .view_layout div:nth-of-type(odd) nav ul li:nth-child(1) button{
+      font-size: 15px;
+    }
+  }
+
+  @media screen and (min-height: 500px) { 
+    .view_layout div:nth-of-type(odd){
+      max-height: 75px;
+    }
+    .view_layout div:nth-of-type(odd) nav{
+      max-height: 75px;
+    }
+    .view_layout div:nth-of-type(odd) nav ul{
+      max-height: 75px;
+    }
+    .view_layout div:nth-of-type(odd) nav ul:nth-child(n) li{
+      height: 75px;
+    }
+    .view_layout div:nth-of-type(odd) nav ul li:nth-child(1) button{
+      font-size: 17px;
+    }
+  }

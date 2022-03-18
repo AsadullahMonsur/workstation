@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <EditText
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="50dp"
+        android:id="@+id/owner_cont5_input1"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:hint="Enter player id"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:background="@color/Green3"/>
+
+    <EditText
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="50dp"
+        android:id="@+id/owner_cont5_input2"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:hint="Enter player name"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:background="@color/Green3"
+        android:layout_below="@id/owner_cont5_input1"
+        />
+
+    <EditText
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="50dp"
+        android:id="@+id/owner_cont5_input3"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:textAlignment="center"
+        android:hint="Enter player country"
+        android:textColor="@color/colorPrimary"
+        android:background="@color/Green3"
+        android:layout_below="@id/owner_cont5_input2" />
+
+    <EditText
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="50dp"
+        android:id="@+id/owner_cont5_input4"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:hint="Enter player age"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:background="@color/Green3"
+        android:layout_below="@id/owner_cont5_input3"/>
+
+
+    <EditText
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="50dp"
+        android:id="@+id/owner_cont5_input5"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:hint="Enter player position"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:background="@color/Green3"
+        android:layout_below="@id/owner_cont5_input4"/>
+
+    <EditText
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="50dp"
+        android:id="@+id/owner_cont5_input6"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:hint="Enter player password"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:background="@color/Green3"
+        android:layout_below="@id/owner_cont5_input5"/>
+
+    <Button
+        android:layout_marginRight="80dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="40dp"
+        android:id="@+id/owner_cont5_btn"
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+        android:textSize="24dp"
+        android:text="Add"
+        android:textAlignment="center"
+        android:textColor="@color/Green3"
+        android:background="@color/colorPrimaryDark"
+        android:layout_below="@id/owner_cont5_input6"
+        />
+
+</RelativeLayout>

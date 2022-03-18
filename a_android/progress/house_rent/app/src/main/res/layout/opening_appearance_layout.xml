@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    android:gravity="top|center"
+    tools:context=".opening_appearance.Opening_Appearance">
+
+<ImageView
+    android:id="@+id/opening_image"
+    android:layout_marginTop="30dp"
+    android:layout_width="250dp"
+    android:layout_height="250dp"
+    android:contentDescription="@string/hrp_logo1"
+    android:src="@mipmap/opening_logo_final">
+</ImageView>
+
+    <ImageView
+        android:layout_marginTop="270dp"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:contentDescription="@string/hrp_logo2"
+        android:src="@mipmap/company_logo_photo_2"/>
+
+</RelativeLayout>
